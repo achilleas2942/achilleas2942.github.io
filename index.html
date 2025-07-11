@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achilleas Santi Seisa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Personal Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 4rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #f8f9fa;
+    }
+    .section {
+      padding: 3rem 1rem;
+    }
+    footer {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hi there 👋!</h1>
-  <p>This is my first GitHub Pages website.</p>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Name</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Ph.D. Student | Researcher | Developer</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Write a brief biography here. Mention your institution, research interests, background, etc.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h5>Project Title</h5>
+        <p>Short description of the project, your contributions, and maybe a link to the code or paper.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="container">
+      <h2>Publications</h2>
+      <ul>
+        <li>Author(s), "Title of the Paper," <em>Journal/Conference</em>, Year.</li>
+        <!-- Add more publications -->
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername">@yourusername</a></p>
+      <!-- Add social media or links if relevant -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; Your Name | Last updated: 2025
+  </footer>
 </body>
+
 </html>
