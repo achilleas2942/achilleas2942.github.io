@@ -27,20 +27,21 @@
     .section {
       padding: 3rem 1rem;
     }
+    .container {
+      max-width: 960px;
+    }
     .publication {
       margin-bottom: 1.5rem;
+    }
+    .abstract-container {
+      display: none;
+      margin-top: 1rem;
     }
     footer {
       background-color: #000000;
       padding: 1rem;
       text-align: center;
       margin-top: 3rem;
-    }
-    .abstract {
-      display: none;
-      margin-top: 0.5rem;
-      font-style: italic;
-      color: #cccccc;
     }
   </style>
 </head>
@@ -76,53 +77,63 @@
   <section id="journals" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Journal Articles</h2>
-      <div class="journals">
+      <div class="publication">
         <strong>A. S. Seisa, S. Velhal, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Optimization of edge-oﬄoading for centralized controllers through dynamic computational resource allocation," <em>(submitted)</em>, 2025</strong>
         <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+        <div class="abstract-container">
           <div class="row align-items-center">
-          <!-- Text Column -->
-          <div class="col-md-8">
-            <p><strong>Abstract</strong> - This paper presents a novel framework based on edge computing, implemented using Kubernetes orchestration, to optimally offload the computational tasks required for centralized control of multiple robotic agents. Edge-based centralized control architectures are prone to failure due to communication delays. The proposed framework computes the maximum round-trip time delay for which the system remains stable and modifies the controller parameters to ensure the control computation within the critical time. For higher processing and communication delays, the complexity of the controller needs to be reduced by reducing the number of agents, the prediction horizon, and the efficient use of edge resources. The edge resources are dynamic, and the controller needs to be designed to guarantee the online computation within a desired time. A dynamic resource allocation method (based on an approximate function of the controller parameters, complexity, and computational resources) is proposed to design the controller parameters to ensure the bounded computation time. To validate the effectiveness of the proposed approach, we conduct experimental evaluations that analyze system behavior under various conditions, providing valuable insights into the performance, scalability, and robustness of multi-agent control systems deployed on edge infrastructure.</p>
-          </div>
-          <!-- Image Column -->
-          <div class="col-md-4 text-center">
-            <img src="images/iot2025seisa.png" alt="IoT 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+            <!-- Text Column -->
+            <div class="col-md-8">
+              <p><strong>Abstract</strong> - This paper presents a novel framework based on edge computing, implemented using Kubernetes orchestration, to optimally offload the computational tasks required for centralized control of multiple robotic agents. Edge-based centralized control architectures are prone to failure due to communication delays. The proposed framework computes the maximum round-trip time delay for which the system remains stable and modifies the controller parameters to ensure the control computation within the critical time. For higher processing and communication delays, the complexity of the controller needs to be reduced by reducing the number of agents, the prediction horizon, and the efficient use of edge resources. The edge resources are dynamic, and the controller needs to be designed to guarantee the online computation within a desired time. A dynamic resource allocation method (based on an approximate function of the controller parameters, complexity, and computational resources) is proposed to design the controller parameters to ensure the bounded computation time. To validate the effectiveness of the proposed approach, we conduct experimental evaluations that analyze system behavior under various conditions, providing valuable insights into the performance, scalability, and robustness of multi-agent control systems deployed on edge infrastructure.</p>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-4 text-center">
+              <img src="images/iot2025seisa.png" alt="IoT 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+            </div>
           </div>
         </div>
       </div>
-
+    </div>
+  </section>
+  
   <section id="conferences" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Conference Proceedings</h2>
-      <div class="conferences">
+      <div class="publication">
         <strong>A. S. Seisa, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Dynamic computational resource allocation for ensuring stability of remote edge-based controlled multi-agent systems," in <em>2025 IEEE 23rd European Control Conference (ECC)</em>, accepted, 2025</strong>
         <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="row align-items-center">
-          <!-- Text Column -->
-          <div class="col-md-8">
-            <p><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</p>
-          </div>
-          <!-- Image Column -->
-          <div class="col-md-4 text-center">
-            <img src="images/ecc2025seisa.png" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="abstract-container">
+          <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-8">
+              <p><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</p>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-4 text-center">
+              <img src="images/ecc2025seisa.png" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
   <section id="books" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Books & Chapters</h2>
-      <div class="books">
-        <strong>A. S. Seisa and A. Koval, "Edge-connected ARWs," in <em>Aerial Robotic Workers</em>, Elsevier, 2023, pp. 245–253.</strong>
+      <div class="publication">
+        <strong>A. S. Seisa and A. Koval, "Edge-connected ARWs," in <em>Aerial Robotic Workers</em>, Elsevier, 2023, pp. 245–253. <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128149096000196?via%3Dihub">doi: 10.1016/B978-0-12-814909-6.00019-6</a>.</strong>
         <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="row align-items-center">
-          <!-- Text Column -->
-          <div class="col-md-8">
-            <p><strong>Abstract</strong> - This chapter focuses on edge computing that is a key technology of industry 4.0 for ARWs and robotic platforms in general. In many missions, ARWs and robots are required to operate autonomously, which commonly means the development of computationally heavy and demanding algorithms. In an effort to expand their capabilities, edge computing has been established as a promising solution. With its utilization, ARWs can take the advantage of edge-significant resources, thus allowing the offloading of the computationally intense processes. Similar to the cloud robotics systems that are associated with high network communication costs, the edge robotics provide minimal latency, since the edge layer is located much closer to the robots. Thus, ARWs can successfully operate in real-time. The integration of edge computing with ARWs and robotic platforms can enable an ecosystem where robots can communicate and collaborate with each other and operators in accomplishing challenging tasks with high performance and in real-time.</p>
-          </div>
-          <!-- Image Column -->
-          <div class="col-md-4 text-center">
-            <img src="images/arw2023nikolakopoulos.jpg" alt="ARW 2023" class="img-fluid rounded shadow" style="max-height: 280px;">
+        <div class="abstract-container">
+          <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-8">
+              <p><strong>Abstract</strong> - This chapter focuses on edge computing that is a key technology of industry 4.0 for ARWs and robotic platforms in general. In many missions, ARWs and robots are required to operate autonomously, which commonly means the development of computationally heavy and demanding algorithms. In an effort to expand their capabilities, edge computing has been established as a promising solution. With its utilization, ARWs can take the advantage of edge-significant resources, thus allowing the offloading of the computationally intense processes. Similar to the cloud robotics systems that are associated with high network communication costs, the edge robotics provide minimal latency, since the edge layer is located much closer to the robots. Thus, ARWs can successfully operate in real-time. The integration of edge computing with ARWs and robotic platforms can enable an ecosystem where robots can communicate and collaborate with each other and operators in accomplishing challenging tasks with high performance and in real-time.</p>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-4 text-center">
+              <img src="images/arw2023nikolakopoulos.jpg" alt="ARW 2023" class="img-fluid rounded shadow" style="max-height: 280px;">
+            </div>
           </div>
         </div>
       </div>
