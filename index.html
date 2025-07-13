@@ -97,11 +97,32 @@
     </div>
   </section>
 
-  <section id="news" class="section" style="color:white;">
+<!--   <section id="news" class="section" style="color:white;">
     <div class="container">
       <h2>News</h2>
       <div class="news">Participation at <strong>European Control Conferences 2025</strong>, Thessaloniki, Greece</div>
       <a href="news.html" class="btn btn-outline-light mt-3">Read more</a>
+    </div>
+  </section> -->
+
+  <section id="news" class="section" style="color:white;">
+    <div class="container">
+      <h2>News</h2>
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-8">
+          <div class="news">
+            Participation at <strong>European Control Conference 2025</strong>, Thessaloniki, Greece
+          </div>
+          <p>In June 2025, I travelled to Thessaloniki Greece, to attend the 23rd European Control Conference (ECC), and present my work entitled "Dynamic Computational Resource Allocation for Ensuring Stability of Remote Edge-based Controlled Multi-agent Systems"</p>
+          <p><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</p>
+          <a href="news.html" class="btn btn-outline-light mt-3">Read more</a>
+        </div>
+        <!-- Image Column -->
+        <div class="col-md-4 text-center">
+          <img src="images/ecc2025.jpg" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 150px;">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -142,22 +163,22 @@
       <h2>Projects</h2>
       <div class="row justify-content-center align-items-center g-4">
         <div class="col-6 col-sm-4 col-md-3">
-          <img src="images/sunrise6g.jpeg" alt="SUNRISE-6G" class="project-logo" title="SUNRISE-6G">
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
           <img src="images/ambitious.jpg" alt="AMBITIOUS" class="project-logo" title="AMBITIOUS">
         </div>
         <div class="col-6 col-sm-4 col-md-3">
-          <img src="images/persephone.png" alt="PERSEPHONE" class="project-logo" title="PERSEPHONE">
-        </div>
-        <div class="col-6 col-sm-4 col-md-3">
-          <img src="images/arctic-edge.jpg" alt="ARCTIC EDGE" class="project-logo" title="ARCTIC EDGE">
+          <img src="images/sunrise6g.jpeg" alt="SUNRISE-6G" class="project-logo" title="SUNRISE-6G">
         </div>
         <div class="col-6 col-sm-4 col-md-3">
           <img src="images/aerotrain1.png" alt="AERO-TRAIN" class="project-logo" title="AERO-TRAIN">
         </div>
         <div class="col-6 col-sm-4 col-md-3">
+          <img src="images/persephone.png" alt="PERSEPHONE" class="project-logo" title="PERSEPHONE">
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
           <img src="images/5gedge.png" alt="5GEIM" class="project-logo" title="5GEIM">
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <img src="images/arctic-edge.jpg" alt="ARCTIC EDGE" class="project-logo" title="ARCTIC EDGE">
         </div>
         <div class="col-6 col-sm-4 col-md-3">
           <img src="images/G-Drones-logo.png" alt="G-DRONES" class="project-logo" title="G-DRONES">
