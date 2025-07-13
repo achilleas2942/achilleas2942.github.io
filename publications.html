@@ -30,8 +30,14 @@
     .publication {
       margin-bottom: 1.5rem;
     }
+    .publication > strong {
+      display: block;
+    }
     .abstract-container {
       display: none;
+      margin-top: 1rem;
+    }
+    .section:first-of-type {
       margin-top: 1rem;
     }
     footer {
@@ -63,7 +69,7 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
+      <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
           <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
@@ -76,6 +82,16 @@
       </div>
     </div>
   </nav>
+
+  <section class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <h2>Google Scholar</h2>
+      <p>
+        You can find my full publication list and citation metrics on my
+        <a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar profile</a>.
+      </p>
+    </div>
+  </section>
 
   <section id="journals" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
