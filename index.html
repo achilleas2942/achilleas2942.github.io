@@ -57,6 +57,12 @@
     .project, .publication, .education, .experience {
       margin-bottom: 1.5rem;
     }
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255,255,255, 0.8 %29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
   </style>
 </head>
 
@@ -64,7 +70,17 @@
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">Achilleas Santi Seisa</a>
-      <div class="collapse navbar-collapse">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
@@ -112,13 +128,13 @@
           </div>
           <p>In June 2025, I travelled to Thessaloniki Greece, to attend the 23rd European Control Conference (ECC), and present my work entitled "Dynamic Computational Resource Allocation for Ensuring Stability of Remote Edge-based Controlled Multi-agent Systems"</p>
           <p><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</p>
-          <a href="news.html" class="btn btn-outline-light mt-3">Read more</a>
         </div>
         <!-- Image Column -->
         <div class="col-md-4 text-center">
           <img src="images/ecc2025.jpg" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
         </div>
       </div>
+      <a href="news.html" class="btn btn-outline-light mt-3">Read more</a>
     </div>
   </section>
 
@@ -208,7 +224,7 @@
       mirror: true         // fade out when scrolling back up
     });
 </script>
-  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
   
 </html>
