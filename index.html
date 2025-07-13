@@ -7,8 +7,18 @@
   <title>Achilleas Santi Seisa</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,       // animation duration in ms
+        offset: 100,         // trigger offset from the bottom
+        once: false,         // animation happens every time you scroll
+        mirror: true         // fade out when scrolling back up
+      });
+    </script>
     body {
       font-family: 'Ubuntu', sans-serif;
       padding-top: 4rem;
@@ -84,7 +94,7 @@
     </div>
   </section>
 
-  <section id="about" class="section" style="color:white;">
+  <section id="about" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
       <p>My name is Achilleas and I am a robotics researcher with 5+ years of experience in edge-enabled autonomous systems, UAV control, scalable cloud-robot architectures, and industrial automation. I am currently pursuing my Ph.D. at Luleå University of Technology in the field of robotics, control systems, and edge computing.</p>
@@ -98,7 +108,7 @@
     </div>
   </section>
 
-  <section id="news" class="section" style="color:white;">
+  <section id="news" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>News</h2>
       <div class="row align-items-center">
@@ -119,7 +129,7 @@
     </div>
   </section>
 
-  <section id="experience" class="section" style="color:white;">
+  <section id="experience" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Experience</h2>
       <div class="experience"><strong>CTO & Co-Founder, Eighth Dimension GmbH</strong> – To date, Munich, Germany</div>
@@ -130,7 +140,7 @@
     </div>
   </section>
 
-  <section id="education" class="section" style="color:white;">
+  <section id="education" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Education</h2>
       <div class="education"><strong>Ph.D., Luleå University of Technology</strong>, 2025 – Towards the Next Generation Robotic Autonomy on the Edge: Scalability, Resiliency, and Dynamic Resource Allocation</div>
@@ -140,7 +150,7 @@
     </div>
   </section>
 
-  <section id="publications" class="section" style="color:white;">
+  <section id="publications" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Publications</h2>
       <div class="publication">Seisa et al., "An edge architecture for autonomous aerial navigation," <em>Journal of Parallel and Distributed Computing</em>, 2024</div>
@@ -151,7 +161,7 @@
     </div>
   </section>
 
-  <section id="projects" class="section" style="color:white;">
+  <section id="projects" class="section" style="color:white;" data-aos="fade-up">
     <div class="container text-center">
       <h2>Projects</h2>
       <div class="row justify-content-center align-items-center g-4">
@@ -181,7 +191,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section" style="color:white;">
+  <section id="contact" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <h2>Contact</h2>
       <p>☎ Phone Number: +46 730926670</p>
