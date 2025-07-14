@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Achilleas Santi Seisa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      padding-top: 4rem;
+      background: linear-gradient(to right, #0a1b2c, #132c48);
+    }
+    .navbar {
+      background-color: #000000 !important;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #d3d3d3 !important;
+    }
+    .section {
+      padding: 3rem 1rem;
+    }
+    .projects {
+      margin-bottom: 1.5rem;
+    }
+    .projects > strong {
+      display: block;
+    }
+    .abstract-container {
+      display: none;
+      margin-top: 1rem;
+    }
+    .section:first-of-type {
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #000000;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255,255,255, 0.8 %29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Achilleas Santi Seisa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-outline-warning ms-2" href="cv.pdf" target="_blank">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>
+        My projects
+      </p>
+    </div>
+  </section>
+
+
+
+  <footer style="color:white;">
+    &copy; Achilleas Santi Seisa | Sweden 🇸🇪 | Last updated: 2025
+  </footer>
+
+  <script>
+    document.querySelectorAll('.toggle-abstract').forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const abstract = this.nextElementSibling;
+        const isVisible = abstract.style.display === 'block';
+        abstract.style.display = isVisible ? 'none' : 'block';
+        this.textContent = isVisible ? 'Read more' : 'Read less';
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,       // animation duration in ms
+      offset: 100,         // trigger offset from the bottom
+      once: false,         // animation happens every time you scroll
+      mirror: true         // fade out when scrolling back up
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
