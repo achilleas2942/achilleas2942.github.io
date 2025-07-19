@@ -86,93 +86,95 @@
   <!-- Ph.D. Studies -->
   <section id="phd" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>Ph.D. Candidate at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a></h2>
-      <p class="fs-6 text-white-50 mb-4">2025 · Department of Computer Science, Electrical and Space Engineering, Divison of Signals and Systems, Luleå, Sweden</p>
-      <div class="education">
-        <p>During my Ph.D., I have focused on the intersection of robotics and distributed computing—developing new methods for edge-enabled autonomy, multi-agent control, and real-time resource allocation. My work has contributed to both academic knowledge and practical deployment through several European projects and educational efforts.</p>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Thesis</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              Towards the Next Generation Robotic Autonomy on the Edge: Scalability, Resiliency, and Dynamic Resource Allocation
-              <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-              <div class="abstract-container">
-                <p><strong>Abstract</strong> – Motivated by the increasing need for advanced autonomy and in response to the computational limitations of onboard robotic systems, this thesis presents a unified novel framework for enhancing the autonomy of computationally resource-constrained aerial and ground robotic systems. The primary contributions span from designing novel robotic architectures through edge computing and cloud technologies for robust and safe control system design, resource-aware offloading strategies, scalable cloud/edge deployment, and resilient fallback mechanisms centered around control architectures.</p>
-                <p>A core focus lies in enabling real-time trajectory control for robotic platforms, primarily Unmanned Aerial Vehicles (UAVs), by offloading high-level control to Kubernetes (k8s) edge clusters. The proposed edge architecture integrates edge-offloaded Nonlinear Model Predictive Control (NMPC) with onboard sensing, which requires data transmission between the edge and the robots. A major challenge lies in addressing communication time delays, which are inherent in networked control systems. By deploying network-aware switching strategies that enable seamless switching between offboard NMPC and onboard fail-safe control, continuous and safe operation is ensured. By utilizing 5G communication channels and network KPIs, the system can reactively switch to a safe onboard Proportional-Integral-Derivative (PID) fallback controller when time delays or signal degradation jeopardize stability.</p>
-                <p>Building upon this, a series of novel architectures are proposed to explore predictive control under varying communication time delays. Position predictors are introduced to compensate for round-trip time delays, enabling smooth UAV behavior even in dynamically changing environments. While the computational burden of NMPC is obvious in resource-constrained single-agent systems, it becomes even more critical in multi-agent scenarios. Therefore, these control schemes are extended to centralized NMPC and offloaded to edge clusters. The proposed E-CNMPC (Edge-based Centralized NMPC) framework supports real-time swarm trajectory optimization with embedded collision avoidance by offloading the full control stack to the k8s edge cluster.</p>
-                <p>To address the scalability limitations of centralized NMPC in larger robotic fleets, this thesis introduces novel cloud-based and edge-based architectures that combine intelligent scheduling with dynamic resource modeling. First, dynamic resource allocation based on agent count and prediction horizon length is proposed, ensuring that edge resources are efficiently utilized. Then, a k8s-based scheduling mechanism configures centralized control parameters and dynamically deploys or reconfigures CNMPC pods across distributed worker nodes in edge or cloud clusters. The system solves a Mixed-Integer Linear Program (MILP) to optimize controller-to-agent assignment, prediction horizons, and node-level resource allocations, all while respecting hardware and time delay constraints.</p>
-                <p>In parallel, the framework ensures that closed-loop system stability requirements are met. A polynomial complexity model, derived offline, estimates the computational demand of each controller based on agent count and prediction horizon. This model feeds an online control law that adjusts Central Processing Unit (CPU) and memory requests in real time, ensuring that the total round-trip time delay remains within a stability-guaranteeing threshold. The result is a robust and responsive orchestration framework that maintains closed-loop performance under dynamic workloads and varying communication time delays, enables seamless controller scaling and migration, and maximizes resource efficiency.</p>
-                <p>A comprehensive comparison between edge computing architectures and deployments demonstrates the advantages of the proposed orchestrated systems in resilience, scalability, and fault recovery. Kubernetes enables features like automated deployment, resource monitoring, and application redundancy, which are essential for mission-critical operations involving aerial robots.</p>
-                <p>The thesis also includes an evaluation of edge, fog, and cloud architectures tailored for robotic systems. This justifies the presented contributions within broader infrastructure choices and offers guidelines for selecting appropriate platforms based on task complexity, time delay sensitivity, and resource constraints.</p>
-                <p>Overall, this work establishes a broad foundation for edge-enhanced robotic autonomy, providing novel architectural frameworks, implementation strategies, and theoretical models that bridge real-time control with large-scale deployment. By integrating advanced control methods with cloud-native orchestration tools, it demonstrates how edge and cloud infrastructures can be systematically used to overcome the computational and scalability limitations of traditional robotic systems. </p>
-                <p>The proposed frameworks enable not only reliable and optimized offloading of complex controllers but also adaptive resource management, mission-aware scheduling, and seamless system reconfiguration, which are critical for the future of autonomous robotics operating under dynamic conditions. The presented approaches have been validated through extensive experimentation on simulated agents, UAVs and multi-agent aerial and ground platforms, confirming their performance in realistic scenarios involving varying number of agents, variable network conditions, and mission-critical timing constraints. Together, these contributions offer practical and generalizable insights for the next generation of distributed, resource-efficient, and resilient robotic systems, advancing the field toward robust autonomy at scale.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-user-graduate me-2"></i>Ph.D. Coursework</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              5G methods for Cyber-Physical Systems
-            </li>
-            <li class="mb-3">
-              Aerial Manipulation Control, Perception, and Physical Interaction
-            </li>
-            <li class="mb-3">
-              Human-Robot Interaction
-            </li>
-            <li class="mb-3">
-              Research Methodology and Scientific Writing
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-microscope me-2"></i>Research Highlights</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              Development of adaptive resource allocation strategies to accommodate for dynamic number of agents
-            </li>
-            <li class="mb-3">
-              Design of control methods for dynamic resource allocation to ensure closed-loop stability of edge-controlled systems
-            </li>
-            <li class="mb-3">
-              Edge co-design and dynamic resource allocation for optimized application offloading
-            </li>
-            <li class="mb-3">
-              Big data edge offloading for mapping and improved world awareness
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-award me-2"></i>Academic Milestones</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              Presented at major conferences (IECON, ECC, ICUAS, CCGrid)
-            </li>
-            <li class="mb-3">
-              Contributed to EU and Swedish funded research projects including SUNRISE-6G, AMBITIOUS, PERSEPHONE, ARCTIC EDGE
-            </li>
-            <li class="mb-3">
-              Keynote at CCGrid 2025, RISE Workshop, Trømso, Norway
-              <span class="fs-6 text-white-50 mb-4"><small>2025</small></span>
-            </li>
-            <li class="mb-3">
-              <a href="https://www.iva.se/en/what-iva-does/distinctions/ivas-100-lista-eng/reconfigurable-6g-quality-of-service-qos-and-edge-integration-for-robotics-and-automation/" target="_blank" class="text-warning">IVA’s 100 List</a>
-              <span class="fs-6 text-white-50 mb-4"><small>2024</small></span>
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-link me-2"></i>Related</h5>
-          <ul class="list-unstyled">
-            <li>
-              <strong><a href="publications.html" class="text-warning">Publications</a></strong>
-            </li>
-            <li>
-              <strong><a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar</a></strong>
-            </li>
-          </ul>
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Ph.D. Candidate at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a></h2>
+        <p class="fs-6 text-white-50 mb-4">2025 · Department of Computer Science, Electrical and Space Engineering, Divison of Signals and Systems, Luleå, Sweden</p>
+        <div class="education">
+          <p>During my Ph.D., I have focused on the intersection of robotics and distributed computing—developing new methods for edge-enabled autonomy, multi-agent control, and real-time resource allocation. My work has contributed to both academic knowledge and practical deployment through several European projects and educational efforts.</p>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Thesis</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                Towards the Next Generation Robotic Autonomy on the Edge: Scalability, Resiliency, and Dynamic Resource Allocation
+                <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+                <div class="abstract-container">
+                  <p><strong>Abstract</strong> – Motivated by the increasing need for advanced autonomy and in response to the computational limitations of onboard robotic systems, this thesis presents a unified novel framework for enhancing the autonomy of computationally resource-constrained aerial and ground robotic systems. The primary contributions span from designing novel robotic architectures through edge computing and cloud technologies for robust and safe control system design, resource-aware offloading strategies, scalable cloud/edge deployment, and resilient fallback mechanisms centered around control architectures.</p>
+                  <p>A core focus lies in enabling real-time trajectory control for robotic platforms, primarily Unmanned Aerial Vehicles (UAVs), by offloading high-level control to Kubernetes (k8s) edge clusters. The proposed edge architecture integrates edge-offloaded Nonlinear Model Predictive Control (NMPC) with onboard sensing, which requires data transmission between the edge and the robots. A major challenge lies in addressing communication time delays, which are inherent in networked control systems. By deploying network-aware switching strategies that enable seamless switching between offboard NMPC and onboard fail-safe control, continuous and safe operation is ensured. By utilizing 5G communication channels and network KPIs, the system can reactively switch to a safe onboard Proportional-Integral-Derivative (PID) fallback controller when time delays or signal degradation jeopardize stability.</p>
+                  <p>Building upon this, a series of novel architectures are proposed to explore predictive control under varying communication time delays. Position predictors are introduced to compensate for round-trip time delays, enabling smooth UAV behavior even in dynamically changing environments. While the computational burden of NMPC is obvious in resource-constrained single-agent systems, it becomes even more critical in multi-agent scenarios. Therefore, these control schemes are extended to centralized NMPC and offloaded to edge clusters. The proposed E-CNMPC (Edge-based Centralized NMPC) framework supports real-time swarm trajectory optimization with embedded collision avoidance by offloading the full control stack to the k8s edge cluster.</p>
+                  <p>To address the scalability limitations of centralized NMPC in larger robotic fleets, this thesis introduces novel cloud-based and edge-based architectures that combine intelligent scheduling with dynamic resource modeling. First, dynamic resource allocation based on agent count and prediction horizon length is proposed, ensuring that edge resources are efficiently utilized. Then, a k8s-based scheduling mechanism configures centralized control parameters and dynamically deploys or reconfigures CNMPC pods across distributed worker nodes in edge or cloud clusters. The system solves a Mixed-Integer Linear Program (MILP) to optimize controller-to-agent assignment, prediction horizons, and node-level resource allocations, all while respecting hardware and time delay constraints.</p>
+                  <p>In parallel, the framework ensures that closed-loop system stability requirements are met. A polynomial complexity model, derived offline, estimates the computational demand of each controller based on agent count and prediction horizon. This model feeds an online control law that adjusts Central Processing Unit (CPU) and memory requests in real time, ensuring that the total round-trip time delay remains within a stability-guaranteeing threshold. The result is a robust and responsive orchestration framework that maintains closed-loop performance under dynamic workloads and varying communication time delays, enables seamless controller scaling and migration, and maximizes resource efficiency.</p>
+                  <p>A comprehensive comparison between edge computing architectures and deployments demonstrates the advantages of the proposed orchestrated systems in resilience, scalability, and fault recovery. Kubernetes enables features like automated deployment, resource monitoring, and application redundancy, which are essential for mission-critical operations involving aerial robots.</p>
+                  <p>The thesis also includes an evaluation of edge, fog, and cloud architectures tailored for robotic systems. This justifies the presented contributions within broader infrastructure choices and offers guidelines for selecting appropriate platforms based on task complexity, time delay sensitivity, and resource constraints.</p>
+                  <p>Overall, this work establishes a broad foundation for edge-enhanced robotic autonomy, providing novel architectural frameworks, implementation strategies, and theoretical models that bridge real-time control with large-scale deployment. By integrating advanced control methods with cloud-native orchestration tools, it demonstrates how edge and cloud infrastructures can be systematically used to overcome the computational and scalability limitations of traditional robotic systems. </p>
+                  <p>The proposed frameworks enable not only reliable and optimized offloading of complex controllers but also adaptive resource management, mission-aware scheduling, and seamless system reconfiguration, which are critical for the future of autonomous robotics operating under dynamic conditions. The presented approaches have been validated through extensive experimentation on simulated agents, UAVs and multi-agent aerial and ground platforms, confirming their performance in realistic scenarios involving varying number of agents, variable network conditions, and mission-critical timing constraints. Together, these contributions offer practical and generalizable insights for the next generation of distributed, resource-efficient, and resilient robotic systems, advancing the field toward robust autonomy at scale.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-user-graduate me-2"></i>Ph.D. Coursework</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                5G methods for Cyber-Physical Systems
+              </li>
+              <li class="mb-3">
+                Aerial Manipulation Control, Perception, and Physical Interaction
+              </li>
+              <li class="mb-3">
+                Human-Robot Interaction
+              </li>
+              <li class="mb-3">
+                Research Methodology and Scientific Writing
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-microscope me-2"></i>Research Highlights</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                Development of adaptive resource allocation strategies to accommodate for dynamic number of agents
+              </li>
+              <li class="mb-3">
+                Design of control methods for dynamic resource allocation to ensure closed-loop stability of edge-controlled systems
+              </li>
+              <li class="mb-3">
+                Edge co-design and dynamic resource allocation for optimized application offloading
+              </li>
+              <li class="mb-3">
+                Big data edge offloading for mapping and improved world awareness
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-award me-2"></i>Academic Milestones</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                Presented at major conferences (IECON, ECC, ICUAS, CCGrid)
+              </li>
+              <li class="mb-3">
+                Contributed to EU and Swedish funded research projects including SUNRISE-6G, AMBITIOUS, PERSEPHONE, ARCTIC EDGE
+              </li>
+              <li class="mb-3">
+                Keynote at CCGrid 2025, RISE Workshop, Trømso, Norway
+                <span class="fs-6 text-white-50 mb-4"><small>2025</small></span>
+              </li>
+              <li class="mb-3">
+                <a href="https://www.iva.se/en/what-iva-does/distinctions/ivas-100-lista-eng/reconfigurable-6g-quality-of-service-qos-and-edge-integration-for-robotics-and-automation/" target="_blank" class="text-warning">IVA’s 100 List</a>
+                <span class="fs-6 text-white-50 mb-4"><small>2024</small></span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-link me-2"></i>Related</h5>
+            <ul class="list-unstyled">
+              <li>
+                <strong><a href="publications.html" class="text-warning">Publications</a></strong>
+              </li>
+              <li>
+                <strong><a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar</a></strong>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -181,89 +183,91 @@
   <!-- Licentiate Degree -->
   <section id="licentiate" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>Licentiate of Engineering at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a></h2>
-      <p class="fs-6 text-white-50 mb-4">2023 · Department of Computer Science, Electrical and Space Engineering, Divison of Signals and Systems, Luleå, Sweden</p>
-      <div class="education">
-        <p>During my first years at Luleå University of Technology, I focused on understanding the concepts of edge and cloud computing and how these technologies could imrpove robotic systems. I mainly investigated closed-loop control system over the edge, for resource-constrained robotic platforms to enhance real-time operations.</p>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Thesis</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1799036&dswid=8784" target="_blank" class="text-warning">Towards Enabling the Next Generation of Edge Controlled Robotic Systems</a>
-              <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-              <div class="abstract-container">
-                <p><strong>Abstract</strong> – This thesis introduces a novel framework for edge robotics, enabling the advancement of edge-connected and controlled robots. Autonomous robots, such as Unmanned Aerial Vehicles (UAVs), generate vast amounts of multi-sensor data and rely on complex algorithms. However, their computational requirements often necessitate large onboard computing units, limiting their flight time and payload capacity. This work presents a key contribution towards the development of frameworks that facilitate offloading computational processes from robots to edge computing clusters. Specifically, we focus on offloading computationally intensive Model Predictive Control (MPC) algorithms for UAV trajectory control. To address the time-critical nature of these procedures, we also consider latency and safety measures. By leveraging edge computing, we can achieve the required computational capacity while minimizing communication latency, making it a promising solution for such missions. Furthermore, edge computing enhances the performance and efficiency of MPCs compared to traditional onboard computers. We evaluate this improvement and compare it to conventional approaches. Additionally, we leverage Docker Images and Kubernetes Clusters to take advantage of their features, enabling fast and easy deployment, operability, and migrations of the MPC instances. Kubernetes automates, monitors, and orchestrates the system’s behavior, while the controller applications become highly portable without extensive software dependencies. This thesis focuses on developing real architectures for offloading MPCs either for controlling the trajectory of single robots or multi-agent systems, while utilizing both on-premises small-scale edge computing setups and edge computing providers like the Research Institutes of Sweden (RISE) in Luleå. Extensive simulations and real-life experimental setups support the results and assumptions presented in this work.</p>
-              </div>
-              <div class="row my-3">
-                <div class="col-md-6 text-center">
-                  <img src="images/cf1.gif" alt="JPDC" class="img-fluid rounded shadow" style="height: 500px; object-fit: cover;">
-                  <p class="mt-2">Edge-enabled aerial control</p>
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Licentiate of Engineering at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a></h2>
+        <p class="fs-6 text-white-50 mb-4">2023 · Department of Computer Science, Electrical and Space Engineering, Divison of Signals and Systems, Luleå, Sweden</p>
+        <div class="education">
+          <p>During my first years at Luleå University of Technology, I focused on understanding the concepts of edge and cloud computing and how these technologies could imrpove robotic systems. I mainly investigated closed-loop control system over the edge, for resource-constrained robotic platforms to enhance real-time operations.</p>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Thesis</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1799036&dswid=8784" target="_blank" class="text-warning">Towards Enabling the Next Generation of Edge Controlled Robotic Systems</a>
+                <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+                <div class="abstract-container">
+                  <p><strong>Abstract</strong> – This thesis introduces a novel framework for edge robotics, enabling the advancement of edge-connected and controlled robots. Autonomous robots, such as Unmanned Aerial Vehicles (UAVs), generate vast amounts of multi-sensor data and rely on complex algorithms. However, their computational requirements often necessitate large onboard computing units, limiting their flight time and payload capacity. This work presents a key contribution towards the development of frameworks that facilitate offloading computational processes from robots to edge computing clusters. Specifically, we focus on offloading computationally intensive Model Predictive Control (MPC) algorithms for UAV trajectory control. To address the time-critical nature of these procedures, we also consider latency and safety measures. By leveraging edge computing, we can achieve the required computational capacity while minimizing communication latency, making it a promising solution for such missions. Furthermore, edge computing enhances the performance and efficiency of MPCs compared to traditional onboard computers. We evaluate this improvement and compare it to conventional approaches. Additionally, we leverage Docker Images and Kubernetes Clusters to take advantage of their features, enabling fast and easy deployment, operability, and migrations of the MPC instances. Kubernetes automates, monitors, and orchestrates the system’s behavior, while the controller applications become highly portable without extensive software dependencies. This thesis focuses on developing real architectures for offloading MPCs either for controlling the trajectory of single robots or multi-agent systems, while utilizing both on-premises small-scale edge computing setups and edge computing providers like the Research Institutes of Sweden (RISE) in Luleå. Extensive simulations and real-life experimental setups support the results and assumptions presented in this work.</p>
                 </div>
-                <div class="col-md-6 text-center">
-                  <img src="images/tb60.gif" alt="E-CNMPC" class="img-fluid rounded shadow" style="max-height: 500px;">
-                  <p class="mt-2">Edge-enabled multi-agent ground control</p>
+                <div class="row my-3">
+                  <div class="col-md-6 text-center">
+                    <img src="images/cf1.gif" alt="JPDC" class="img-fluid rounded shadow" style="max-height: 500px;">
+                    <p class="mt-2">Edge-enabled aerial control</p>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img src="images/tb60.gif" alt="E-CNMPC" class="img-fluid rounded shadow" style="max-height: 500px;">
+                    <p class="mt-2">Edge-enabled multi-agent ground control</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-user-graduate me-2"></i>Licentiate Coursework</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                Cloud Computing Methods
+              </li>
+              <li class="mb-3">
+                Robot Operating System (ROS)
+              </li>
+              <li class="mb-3">
+                Robotics
+              </li>
+              <li class="mb-3">
+                Computer Vision and Image Processing
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-microscope me-2"></i>Research Highlights</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                Development of edge-based frameworks to enable real-time trajectory control of resource-constrained robots
+              </li>
+              <li class="mb-3">
+                Propose of delay-aware control architectures for aerial robotic systems
+              </li>
+              <li class="mb-3">
+                Integration of 5G communication with real-time edge-enabled controllers
+              </li>
+              <li class="mb-3">
+                Design of centralized control architecture for multi-agent robotic systems
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-award me-2"></i>Academic Milestones</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                Presented at major conferences (IECON, ICUAS, ISIE, MED, ICCAD, CSCC)
+              </li>
+              <li class="mb-3">
+                Contributed to EU and Swedish funded research projects including AERO-TRAIN, G-DRONES, 5GEIM, REBOOT SKILLS
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-link me-2"></i>Related</h5>
+            <ul class="list-unstyled">
+              <li>
+                <strong><a href="publications.html" class="text-warning">Publications</a></strong>
+              </li>
+              <li>
+                <strong><a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar</a></strong>
+              </li>
+            </ul>
+          </div>
+          <img src="images/lic.jpg" alt="RAI Team" class="img-fluid rounded shadow my-3">
         </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-user-graduate me-2"></i>Licentiate Coursework</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              Cloud Computing Methods
-            </li>
-            <li class="mb-3">
-              Robot Operating System (ROS)
-            </li>
-            <li class="mb-3">
-              Robotics
-            </li>
-            <li class="mb-3">
-              Computer Vision and Image Processing
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-microscope me-2"></i>Research Highlights</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              Development of edge-based frameworks to enable real-time trajectory control of resource-constrained robots
-            </li>
-            <li class="mb-3">
-              Propose of delay-aware control architectures for aerial robotic systems
-            </li>
-            <li class="mb-3">
-              Integration of 5G communication with real-time edge-enabled controllers
-            </li>
-            <li class="mb-3">
-              Design of centralized control architecture for multi-agent robotic systems
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-award me-2"></i>Academic Milestones</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              Presented at major conferences (IECON, ICUAS, ISIE, MED, ICCAD, CSCC)
-            </li>
-            <li class="mb-3">
-              Contributed to EU and Swedish funded research projects including AERO-TRAIN, G-DRONES, 5GEIM, REBOOT SKILLS
-            </li>
-          </ul>
-        </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-link me-2"></i>Related</h5>
-          <ul class="list-unstyled">
-            <li>
-              <strong><a href="publications.html" class="text-warning">Publications</a></strong>
-            </li>
-            <li>
-              <strong><a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar</a></strong>
-            </li>
-          </ul>
-        </div>
-        <img src="images/lic.jpg" alt="RAI Team" class="img-fluid rounded shadow my-3">
       </div>
     </div>
   </section>
@@ -271,45 +275,47 @@
   <!-- Integrated Master's -->
    <section id="masters" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>Integrated Master's Degree at <a href="https://www.upatras.gr/en/" target="_blank" class="text-warning">University of Patras</a></h2>
-      <p class="fs-6 text-white-50 mb-4">2020 · Department of Electrical and Computer Engineering, Division of Systems and Control, Patras, Greece</p>
-      <div class="education">
-        <p>I earned my Integrated Master’s degree in Electrical and Computer Engineering from the University of Patras, Greece. During this five-year program, I developed a strong foundation in core engineering principles, with a growing interest in control systems, automation, and robotics. My academic journey culminated in a diploma thesis titled <em>Development and Control of an Advanced Robotic Tool for Minimally Invasive Surgical Operations</em>, completed within the Signals and Systems Division. In addition to coursework, I actively participated in hands-on projects involving embedded systems, PLC programming, and robotic prototyping—experiences that laid the groundwork for my research career in robotics and edge computing.</p>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Diploma Thesis</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <a href="https://nemertes.library.upatras.gr/items/aadd0092-a40a-4b2b-a781-de9a10572c4e" target="_blank" class="text-warning">Development and Control of an Advanced Robotic Tool for Minimally Invasive Surgical Operations</a> – <a href="https://github.com/achilleas2942/Development-and-experimental-evaluation-of-an-RRR-Tendon-DrivenProbe-for-Robot-Assisted-M" target="_blank" class="text-warning">GitHub Repository</a>
-              <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-              <div class="abstract-container">
-                <p><strong>Abstract</strong> – The purpose of this diploma thesis is the design, implementation and experimental evaluation of a minimally invasive robotic surgical system. The system consists of a spherical wrist that offers three degrees of freedom and a gripper that is connected to the wrist. The one degree of freedom is actuated directly by a servomotor, while the other two degrees of freedom and the gripper are actuated by a tendon driven system. Each one of the two degrees of freedom is actuated via an antagonistic tendon driven mechanism by a pair of servomotors while the gripper is actuated by a servomotor. The kinematics of the tool are analyzed and a mathematical model is presented. The robotic tool is constructed and the software have been possible to develop a program to operate the tool. The efficiency and behavior of the system is examined based on experimental studies. Finally the system is evaluated and future research is proposed.</p>
-              </div>
-              <div class="row my-3">
-                <div class="col-md-6 text-center">
-                  <img src="images/msc-thesis.jpg" alt="Diploma Thesis" class="img-fluid rounded shadow" style="max-height: 500px;">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Integrated Master's Degree at <a href="https://www.upatras.gr/en/" target="_blank" class="text-warning">University of Patras</a></h2>
+        <p class="fs-6 text-white-50 mb-4">2020 · Department of Electrical and Computer Engineering, Division of Systems and Control, Patras, Greece</p>
+        <div class="education">
+          <p>I earned my Integrated Master’s degree in Electrical and Computer Engineering from the University of Patras, Greece. During this five-year program, I developed a strong foundation in core engineering principles, with a growing interest in control systems, automation, and robotics. My academic journey culminated in a diploma thesis titled <em>Development and Control of an Advanced Robotic Tool for Minimally Invasive Surgical Operations</em>, completed within the Signals and Systems Division. In addition to coursework, I actively participated in hands-on projects involving embedded systems, PLC programming, and robotic prototyping—experiences that laid the groundwork for my research career in robotics and edge computing.</p>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Diploma Thesis</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="https://nemertes.library.upatras.gr/items/aadd0092-a40a-4b2b-a781-de9a10572c4e" target="_blank" class="text-warning">Development and Control of an Advanced Robotic Tool for Minimally Invasive Surgical Operations</a> – <a href="https://github.com/achilleas2942/Development-and-experimental-evaluation-of-an-RRR-Tendon-DrivenProbe-for-Robot-Assisted-M" target="_blank" class="text-warning">GitHub Repository</a>
+                <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+                <div class="abstract-container">
+                  <p><strong>Abstract</strong> – The purpose of this diploma thesis is the design, implementation and experimental evaluation of a minimally invasive robotic surgical system. The system consists of a spherical wrist that offers three degrees of freedom and a gripper that is connected to the wrist. The one degree of freedom is actuated directly by a servomotor, while the other two degrees of freedom and the gripper are actuated by a tendon driven system. Each one of the two degrees of freedom is actuated via an antagonistic tendon driven mechanism by a pair of servomotors while the gripper is actuated by a servomotor. The kinematics of the tool are analyzed and a mathematical model is presented. The robotic tool is constructed and the software have been possible to develop a program to operate the tool. The efficiency and behavior of the system is examined based on experimental studies. Finally the system is evaluated and future research is proposed.</p>
                 </div>
-                <div class="col-md-6 text-center">
-                  <img src="images/diploma.gif" alt="Diploma Thesis gif" class="img-fluid rounded shadow" style="height: 500px; object-fit: cover;">
+                <div class="row my-3">
+                  <div class="col-md-6 text-center">
+                    <img src="images/msc-thesis.jpg" alt="Diploma Thesis" class="img-fluid rounded shadow" style="max-height: 400px;">
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <img src="images/diploma.gif" alt="Diploma Thesis gif" class="img-fluid rounded shadow" style="max-height: 400px;">
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+            <h5 class="text-info mb-3"><i class="fas fa-project-diagram me-2"></i>Additional Projects</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                PUMA 560 Robotic Arm, Rebartek – <a href="https://github.com/achilleas2942/Rebartek_Project" target="_blank" class="text-warning">GitHub Repository</a>
+              </li>
+              <li class="mb-3">
+                Guidance, Control and Navigation of a 3-Wheel Mobile Robot – <a href="https://github.com/achilleas2942/Guidance-Control-and-Navigation-of-a-3-Wheel-Mobile-Robot" target="_blank" class="text-warning">GitHub Repository</a>
+              </li>
+              <li class="mb-3">
+                Design Image Processing & Computer Vision Algorithms
+              </li>
+            </ul>
+          </div>
+          <img src="images/msc-projects.png" alt="Bachelor Projects" class="img-fluid rounded shadow my-3">
         </div>
-        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
-          <h5 class="text-info mb-3"><i class="fas fa-project-diagram me-2"></i>Additional Projects</h5>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              PUMA 560 Robotic Arm, Rebartek – <a href="https://github.com/achilleas2942/Rebartek_Project" target="_blank" class="text-warning">GitHub Repository</a>
-            </li>
-            <li class="mb-3">
-              Guidance, Control and Navigation of a 3-Wheel Mobile Robot – <a href="https://github.com/achilleas2942/Guidance-Control-and-Navigation-of-a-3-Wheel-Mobile-Robot" target="_blank" class="text-warning">GitHub Repository</a>
-            </li>
-            <li class="mb-3">
-              Design Image Processing & Computer Vision Algorithms
-            </li>
-          </ul>
-        </div>
-        <img src="images/msc-projects.png" alt="Bachelor Projects" class="img-fluid rounded shadow my-3">
       </div>
     </div>
   </section>
