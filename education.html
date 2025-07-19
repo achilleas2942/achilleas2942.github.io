@@ -89,44 +89,91 @@
       <h2>Ph.D. Candidate at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a></h2>
       <p class="fs-6 text-white-50 mb-4">2025 · Department of Computer Science, Electrical and Space Engineering, Divison of Signals and Systems, Luleå, Sweden</p>
       <div class="education">
-        <p><strong>Focus:</strong> "Towards the Next Generation Robotic Autonomy on the Edge: Scalability, Resiliency, and Dynamic Resource Allocation"</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <p><strong>Abstract</strong> – Motivated by the increasing need for advanced autonomy and in response to the computational limitations of onboard robotic systems, this thesis presents a unified novel framework for enhancing the autonomy of computationally resource-constrained aerial and ground robotic systems. The primary contributions span from designing novel robotic architectures through edge computing and cloud technologies for robust and safe control system design, resource-aware offloading strategies, scalable cloud/edge deployment, and resilient fallback mechanisms centered around control architectures.</p>
-          <p>A core focus lies in enabling real-time trajectory control for robotic platforms, primarily Unmanned Aerial Vehicles (UAVs), by offloading high-level control to Kubernetes (k8s) edge clusters. The proposed edge architecture integrates edge-offloaded Nonlinear Model Predictive Control (NMPC) with onboard sensing, which requires data transmission between the edge and the robots. A major challenge lies in addressing communication time delays, which are inherent in networked control systems. By deploying network-aware switching strategies that enable seamless switching between offboard NMPC and onboard fail-safe control, continuous and safe operation is ensured. By utilizing 5G communication channels and network KPIs, the system can reactively switch to a safe onboard Proportional-Integral-Derivative (PID) fallback controller when time delays or signal degradation jeopardize stability.</p>
-          <p>Building upon this, a series of novel architectures are proposed to explore predictive control under varying communication time delays. Position predictors are introduced to compensate for round-trip time delays, enabling smooth UAV behavior even in dynamically changing environments. While the computational burden of NMPC is obvious in resource-constrained single-agent systems, it becomes even more critical in multi-agent scenarios. Therefore, these control schemes are extended to centralized NMPC and offloaded to edge clusters. The proposed E-CNMPC (Edge-based Centralized NMPC) framework supports real-time swarm trajectory optimization with embedded collision avoidance by offloading the full control stack to the k8s edge cluster.</p>
-          <p>To address the scalability limitations of centralized NMPC in larger robotic fleets, this thesis introduces novel cloud-based and edge-based architectures that combine intelligent scheduling with dynamic resource modeling. First, dynamic resource allocation based on agent count and prediction horizon length is proposed, ensuring that edge resources are efficiently utilized. Then, a k8s-based scheduling mechanism configures centralized control parameters and dynamically deploys or reconfigures CNMPC pods across distributed worker nodes in edge or cloud clusters. The system solves a Mixed-Integer Linear Program (MILP) to optimize controller-to-agent assignment, prediction horizons, and node-level resource allocations, all while respecting hardware and time delay constraints.</p>
-          <p>In parallel, the framework ensures that closed-loop system stability requirements are met. A polynomial complexity model, derived offline, estimates the computational demand of each controller based on agent count and prediction horizon. This model feeds an online control law that adjusts Central Processing Unit (CPU) and memory requests in real time, ensuring that the total round-trip time delay remains within a stability-guaranteeing threshold. The result is a robust and responsive orchestration framework that maintains closed-loop performance under dynamic workloads and varying communication time delays, enables seamless controller scaling and migration, and maximizes resource efficiency.</p>
-          <p>A comprehensive comparison between edge computing architectures and deployments demonstrates the advantages of the proposed orchestrated systems in resilience, scalability, and fault recovery. Kubernetes enables features like automated deployment, resource monitoring, and application redundancy, which are essential for mission-critical operations involving aerial robots.</p>
-          <p>The thesis also includes an evaluation of edge, fog, and cloud architectures tailored for robotic systems. This justifies the presented contributions within broader infrastructure choices and offers guidelines for selecting appropriate platforms based on task complexity, time delay sensitivity, and resource constraints.</p>
-          <p>Overall, this work establishes a broad foundation for edge-enhanced robotic autonomy, providing novel architectural frameworks, implementation strategies, and theoretical models that bridge real-time control with large-scale deployment. By integrating advanced control methods with cloud-native orchestration tools, it demonstrates how edge and cloud infrastructures can be systematically used to overcome the computational and scalability limitations of traditional robotic systems. </p>
-          <p>The proposed frameworks enable not only reliable and optimized offloading of complex controllers but also adaptive resource management, mission-aware scheduling, and seamless system reconfiguration, which are critical for the future of autonomous robotics operating under dynamic conditions. The presented approaches have been validated through extensive experimentation on simulated agents, UAVs and multi-agent aerial and ground platforms, confirming their performance in realistic scenarios involving varying number of agents, variable network conditions, and mission-critical timing constraints. Together, these contributions offer practical and generalizable insights for the next generation of distributed, resource-efficient, and resilient robotic systems, advancing the field toward robust autonomy at scale.</p>
+        <p>During my Ph.D., I have focused on the intersection of robotics and distributed computing—developing new methods for edge-enabled autonomy, multi-agent control, and real-time resource allocation. My work has contributed to both academic knowledge and practical deployment through several European projects and educational efforts.</p>
+        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+          <h5 class="text-info mb-3"><i class="fas fa-book-open me-2"></i>Thesis</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              Towards the Next Generation Robotic Autonomy on the Edge: Scalability, Resiliency, and Dynamic Resource Allocation
+              <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+              <div class="abstract-container">
+                <p><strong>Abstract</strong> – Motivated by the increasing need for advanced autonomy and in response to the computational limitations of onboard robotic systems, this thesis presents a unified novel framework for enhancing the autonomy of computationally resource-constrained aerial and ground robotic systems. The primary contributions span from designing novel robotic architectures through edge computing and cloud technologies for robust and safe control system design, resource-aware offloading strategies, scalable cloud/edge deployment, and resilient fallback mechanisms centered around control architectures.</p>
+                <p>A core focus lies in enabling real-time trajectory control for robotic platforms, primarily Unmanned Aerial Vehicles (UAVs), by offloading high-level control to Kubernetes (k8s) edge clusters. The proposed edge architecture integrates edge-offloaded Nonlinear Model Predictive Control (NMPC) with onboard sensing, which requires data transmission between the edge and the robots. A major challenge lies in addressing communication time delays, which are inherent in networked control systems. By deploying network-aware switching strategies that enable seamless switching between offboard NMPC and onboard fail-safe control, continuous and safe operation is ensured. By utilizing 5G communication channels and network KPIs, the system can reactively switch to a safe onboard Proportional-Integral-Derivative (PID) fallback controller when time delays or signal degradation jeopardize stability.</p>
+                <p>Building upon this, a series of novel architectures are proposed to explore predictive control under varying communication time delays. Position predictors are introduced to compensate for round-trip time delays, enabling smooth UAV behavior even in dynamically changing environments. While the computational burden of NMPC is obvious in resource-constrained single-agent systems, it becomes even more critical in multi-agent scenarios. Therefore, these control schemes are extended to centralized NMPC and offloaded to edge clusters. The proposed E-CNMPC (Edge-based Centralized NMPC) framework supports real-time swarm trajectory optimization with embedded collision avoidance by offloading the full control stack to the k8s edge cluster.</p>
+                <p>To address the scalability limitations of centralized NMPC in larger robotic fleets, this thesis introduces novel cloud-based and edge-based architectures that combine intelligent scheduling with dynamic resource modeling. First, dynamic resource allocation based on agent count and prediction horizon length is proposed, ensuring that edge resources are efficiently utilized. Then, a k8s-based scheduling mechanism configures centralized control parameters and dynamically deploys or reconfigures CNMPC pods across distributed worker nodes in edge or cloud clusters. The system solves a Mixed-Integer Linear Program (MILP) to optimize controller-to-agent assignment, prediction horizons, and node-level resource allocations, all while respecting hardware and time delay constraints.</p>
+                <p>In parallel, the framework ensures that closed-loop system stability requirements are met. A polynomial complexity model, derived offline, estimates the computational demand of each controller based on agent count and prediction horizon. This model feeds an online control law that adjusts Central Processing Unit (CPU) and memory requests in real time, ensuring that the total round-trip time delay remains within a stability-guaranteeing threshold. The result is a robust and responsive orchestration framework that maintains closed-loop performance under dynamic workloads and varying communication time delays, enables seamless controller scaling and migration, and maximizes resource efficiency.</p>
+                <p>A comprehensive comparison between edge computing architectures and deployments demonstrates the advantages of the proposed orchestrated systems in resilience, scalability, and fault recovery. Kubernetes enables features like automated deployment, resource monitoring, and application redundancy, which are essential for mission-critical operations involving aerial robots.</p>
+                <p>The thesis also includes an evaluation of edge, fog, and cloud architectures tailored for robotic systems. This justifies the presented contributions within broader infrastructure choices and offers guidelines for selecting appropriate platforms based on task complexity, time delay sensitivity, and resource constraints.</p>
+                <p>Overall, this work establishes a broad foundation for edge-enhanced robotic autonomy, providing novel architectural frameworks, implementation strategies, and theoretical models that bridge real-time control with large-scale deployment. By integrating advanced control methods with cloud-native orchestration tools, it demonstrates how edge and cloud infrastructures can be systematically used to overcome the computational and scalability limitations of traditional robotic systems. </p>
+                <p>The proposed frameworks enable not only reliable and optimized offloading of complex controllers but also adaptive resource management, mission-aware scheduling, and seamless system reconfiguration, which are critical for the future of autonomous robotics operating under dynamic conditions. The presented approaches have been validated through extensive experimentation on simulated agents, UAVs and multi-agent aerial and ground platforms, confirming their performance in realistic scenarios involving varying number of agents, variable network conditions, and mission-critical timing constraints. Together, these contributions offer practical and generalizable insights for the next generation of distributed, resource-efficient, and resilient robotic systems, advancing the field toward robust autonomy at scale.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <p class="mt-3"><strong>Ph.D. Coursework:</strong></p>
-        <ul>
-          <li>5G methods for Cyber-Physical Systems</li>
-          <li>Aerial Manipulation Control, Perception, and Physical Interaction</li>
-          <li>Human-Robot Interaction</li>
-          <li>Research Methodology and Scientific Writing</li>
-        </ul>
-        <p><strong>Research Highlights:</strong></p>
-        <ul>
-          <li>Development of adaptive resource allocation strategies to accommodate for dynamic number of agents</li>
-          <li>Design of control methods for dynamic resource allocation to ensure closed-loop stability of edge-controlled systems</li>
-          <li>Edge co-design and dynamic resource allocation for optimized application offloading</li>
-          <li>Big data edge offloading for world mapping and improved awareness</li>
-        </ul>
-        <p><strong>Academic Milestones:</strong></p>
-        <ul>
-          <li>Presented at major conferences (IECON, ECC, ICUAS, CCGrid).</li>
-          <li>Contributed to EU and Swedish funded research projects including SUNRISE-6G, AMBITIOUS, PERSEPHONE, ARCTIC EDGE</li>
-          <li>Keynote presentation at the CCGrid RISE Workshop, Trømso, Norway</li>
-        </ul>
-        <p>
-        <strong>Related:</strong>
-        <a href="publications.html" class="text-warning">Publications</a>
-        <a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar</a>
-      </p>
+        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+          <h5 class="text-info mb-3"><i class="fas fa-user-graduate me-2"></i>Ph.D. Coursework</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              5G methods for Cyber-Physical Systems
+            </li>
+            <li class="mb-3">
+              Aerial Manipulation Control, Perception, and Physical Interaction
+            </li>
+            <li class="mb-3">
+              Human-Robot Interaction
+            </li>
+            <li class="mb-3">
+              Research Methodology and Scientific Writing
+            </li>
+          </ul>
+        </div>
+        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+          <h5 class="text-info mb-3"><i class="fas fa-microscope me-2"></i>Research Highlights</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              Development of adaptive resource allocation strategies to accommodate for dynamic number of agents
+            </li>
+            <li class="mb-3">
+              Design of control methods for dynamic resource allocation to ensure closed-loop stability of edge-controlled systems
+            </li>
+            <li class="mb-3">
+              Edge co-design and dynamic resource allocation for optimized application offloading
+            </li>
+            <li class="mb-3">
+              Big data edge offloading for mapping and improved world awareness
+            </li>
+          </ul>
+        </div>
+        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+          <h5 class="text-info mb-3"><i class="fas fa-microscope me-2"></i>Academic Milestones</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              Presented at major conferences (IECON, ECC, ICUAS, CCGrid)
+            </li>
+            <li class="mb-3">
+              Contributed to EU and Swedish funded research projects including SUNRISE-6G, AMBITIOUS, PERSEPHONE, ARCTIC EDGE
+            </li>
+            <li class="mb-3">
+              Keynote at CCGrid 2025, RISE Workshop, Trømso, Norway
+              <span class="fs-6 text-white-50 mb-4"><small>2025</small></span>
+            </li>
+            <li class="mb-3">
+              <a href="https://www.iva.se/en/what-iva-does/distinctions/ivas-100-lista-eng/reconfigurable-6g-quality-of-service-qos-and-edge-integration-for-robotics-and-automation/" target="_blank" class="text-warning">IVA’s 100 List</a>
+              <span class="fs-6 text-white-50 mb-4"><small>2024</small></span>
+            </li>
+          </ul>
+        </div>
+        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+          <h5 class="text-info mb-3"><i class="fas fa-link me-2"></i>Related</h5>
+          <ul class="list-unstyled">
+            <li>
+              <strong><a href="publications.html" class="text-warning">Publications</a></strong>
+            </li>
+            <li>
+              <strong><a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" target="_blank" class="text-warning">Google Scholar</a></strong>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
