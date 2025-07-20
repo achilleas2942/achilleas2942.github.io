@@ -95,99 +95,101 @@
 
   <section id="journals" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>Journal Articles</h2>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, S. Velhal, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Optimization of Edge-Oﬄoading for Centralized Controllers Through Dynamic Computational Resource Allocation," <em>submitted</em>, 2025.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - This paper presents a novel framework based on edge computing, implemented using Kubernetes orchestration, to optimally offload the computational tasks required for centralized control of multiple robotic agents. Edge-based centralized control architectures are prone to failure due to communication delays. The proposed framework computes the maximum round-trip time delay for which the system remains stable and modifies the controller parameters to ensure the control computation within the critical time. For higher processing and communication delays, the complexity of the controller needs to be reduced by reducing the number of agents, the prediction horizon, and the efficient use of edge resources. The edge resources are dynamic, and the controller needs to be designed to guarantee the online computation within a desired time. A dynamic resource allocation method (based on an approximate function of the controller parameters, complexity, and computational resources) is proposed to design the controller parameters to ensure the bounded computation time. To validate the effectiveness of the proposed approach, we conduct experimental evaluations that analyze system behavior under various conditions, providing valuable insights into the performance, scalability, and robustness of multi-agent control systems deployed on edge infrastructure.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/iot2025seisa.png" alt="IoT 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p>A. Berra, J. Mellet, <strong>A. S. Seisa</strong>, et al, "Towards Advanced Aerial Physical Inspection in Real Industrial Conditions," <em>submitted</em>, 2025.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - Aerial manipulators, combining aerial robots with robotic arms, have emerged as highly effective for a wide range of applications, especially in aerial physical interaction. To effectively detect surfaces and perform physical interactions, these systems must accurately perceive the target’s location and execute precise visual servoing. This paper introduces a novel system design and framework to enable safe physical contact with defined surfaces. The system consists of an aerial platform equipped with a lightweight tendon-driven, 3-DoF robotic arm, an RGB-D camera for detecting targets and guiding the arm to achieve the desired end-effector positioning, and essential sensors for precise localization of the platform. Results in outdoor experiments showed the system successfully performing physical inspections in industrial environments subject to light variations and windy conditions. The low inertia of the moving arm has no influence on the aerial platform, and its passive damping stabilizes the robot during contact phases. The superiority of the neural-based target detection compared to the model-based has been examined. By reaching the limits of the system at high altitudes and in strong winds, we emphasize the importance of the backup pilot when deploying robots to come in contact with infrastructures. To enable the reproducibility of our result, the dataset for computer vision, design of the arm, and simulation are shared.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/tfr2025andrea.PNG" alt="T-FR 2025" class="img-fluid rounded shadow" style="max-height: 260px;">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Journal Articles</h2>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, S. Velhal, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Optimization of Edge-Oﬄoading for Centralized Controllers Through Dynamic Computational Resource Allocation," <em>submitted</em>, 2025.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - This paper presents a novel framework based on edge computing, implemented using Kubernetes orchestration, to optimally offload the computational tasks required for centralized control of multiple robotic agents. Edge-based centralized control architectures are prone to failure due to communication delays. The proposed framework computes the maximum round-trip time delay for which the system remains stable and modifies the controller parameters to ensure the control computation within the critical time. For higher processing and communication delays, the complexity of the controller needs to be reduced by reducing the number of agents, the prediction horizon, and the efficient use of edge resources. The edge resources are dynamic, and the controller needs to be designed to guarantee the online computation within a desired time. A dynamic resource allocation method (based on an approximate function of the controller parameters, complexity, and computational resources) is proposed to design the controller parameters to ensure the bounded computation time. To validate the effectiveness of the proposed approach, we conduct experimental evaluations that analyze system behavior under various conditions, providing valuable insights into the performance, scalability, and robustness of multi-agent control systems deployed on edge infrastructure.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/iot2025seisa.png" alt="IoT 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, B. Lindqvist, S. G. Satpute, and G. Nikolakopoulos, "An Edge Architecture for Enabling Autonomous Aerial Navigation with Embedded Collision Avoidance Through Remote Nonlinear Model Predictive Control," <em>Journal of Parallel and Distributed Computing</em>, p. 104 849, 2024. <a href="https://www.sciencedirect.com/science/article/pii/S0743731524000133"  target="_blank" class="text-warning">DOI:10.1016/j.jpdc.2024.104849</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In this article, we present an edge-based architecture for enhancing the autonomous capabilities of resource-constrained aerial robots by enabling a remote nonlinear model predictive control scheme, which can be computationally heavy to run on the aerial robots' onboard processors. The nonlinear model predictive control is used to control the trajectory of an unmanned aerial vehicle while detecting, and preventing potential collisions. The proposed edge architecture enables trajectory recalculation for resource-constrained unmanned aerial vehicles in relatively real-time, which will allow them to have fully autonomous behaviors. The architecture is implemented with a remote Kubernetes cluster on the edge side, and it is evaluated on an unmanned aerial vehicle as our controllable robot, while the robotic operating system is used for managing the source codes, and overall communication. With the utilization of edge computing and the architecture presented in this work, we can overcome computational limitations, that resource-constrained robots have, and provide or improve features that are essential for autonomous missions. At the same time, we can minimize the relative travel time delays for time-critical missions over the edge, in comparison to the cloud. We investigate the validity of this hypothesis by evaluating the system's behavior through a series of experiments by utilizing either the unmanned aerial vehicle or the edge resources for the collision avoidance mission.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/jpdc2024seisa.png" alt="JPDC 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p>M.-N. Stamatopoulos, P. Koustoumpardis, <strong>A. Seisa</strong>, and G. Nikolakopoulos, "Path Planning for Collaborative System of Tethered UAVs in Dynamic and Conﬁned Environments," <em>submitted</em>, 2024.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In this article, a novel collaborative tether transportation and path planning framework is introduced, aiming at applications in both static confined and dynamically changing environments. The path planning problem of the system of two Unmanned Aerial Vehicles (UAVs), connected by a rope hanging below them in a cluttered environment, is examined. It is tackled by either avoiding obstacles or passing through narrow openings. The degrees of freedom of the aerial system are simplified by a novel composition mechanism, where all the feasible and allowed states are represented in a compact form. For every state of the formation, a dynamic rigid body is calculated that encloses both the UAVs and the hanging rope curve, thus resulting in a faster and simpler collision-checking procedure, between the system and the rest of the environment. Based on the above simplifications, a Rapidly-exploring Random Trees (RRT) path planning scheme is executed by taking into account the current position and rotation of the surrounding obstacles. The novel reactive path planning and handling of the hanging rope are achieved by having the most recent formation path saved and improved in each iteration and in the case it is not valid anymore, due to a change in the obstacles, a new one is generated. In the sequel, the path is decomposed and fed back as the UAVs' reference positions, forming two trajectories that are fed to the Model Predictive Controller (MPC) of each one. The validity of the proposed framework has been extensively tested and verified by multiple scenarios with both static and dynamic obstacles.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/jras2024stamatopoulos.png" alt="JRAS 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>A. Berra, J. Mellet, <strong>A. S. Seisa</strong>, et al, "Towards Advanced Aerial Physical Inspection in Real Industrial Conditions," <em>submitted</em>, 2025.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - Aerial manipulators, combining aerial robots with robotic arms, have emerged as highly effective for a wide range of applications, especially in aerial physical interaction. To effectively detect surfaces and perform physical interactions, these systems must accurately perceive the target’s location and execute precise visual servoing. This paper introduces a novel system design and framework to enable safe physical contact with defined surfaces. The system consists of an aerial platform equipped with a lightweight tendon-driven, 3-DoF robotic arm, an RGB-D camera for detecting targets and guiding the arm to achieve the desired end-effector positioning, and essential sensors for precise localization of the platform. Results in outdoor experiments showed the system successfully performing physical inspections in industrial environments subject to light variations and windy conditions. The low inertia of the moving arm has no influence on the aerial platform, and its passive damping stabilizes the robot during contact phases. The superiority of the neural-based target detection compared to the model-based has been examined. By reaching the limits of the system at high altitudes and in strong winds, we emphasize the importance of the backup pilot when deploying robots to come in contact with infrastructures. To enable the reproducibility of our result, the dataset for computer vision, design of the arm, and simulation are shared.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/tfr2025andrea.PNG" alt="T-FR 2025" class="img-fluid rounded shadow" style="max-height: 260px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, B. Lindqvist, S. G. Satpute, and G. Nikolakopoulos, "E-CNMPC: Edge-Based Centralized Nonlinear Model Predictive Control for Multiagent Robotic Systems," <em>IEEE Access</em>, vol. 10, pp. 121 590–121 601, 2022. <a href="https://ieeexplore.ieee.org/document/9955515"  target="_blank" class="text-warning">DOI: 10.1109/ACCESS.2022.3223446</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - With the wide deployment of autonomous multi-agent robotic systems, control solutions based on centralized algorithms have been developed. Even though these centralized algorithms can optimize the performance of the multi-agent robotic systems, they require a lot of computational effort, and a centralized unit to undertake the entire process. Yet, many robotic platforms like some ground robots and even more, aerial robots, do not have the computing capacity to execute this kind of frameworks on their onboard computers. While cloud computing has been used as a solution for offloading computationally demanding robotic applications, from the robots to the cloud servers, the latency they introduce to the system has made them unsuitable for time sensitive applications. To overcome these challenges, this article promotes an Edge computing-based Centralized Nonlinear Model Predictive Control (E-CNMPC) framework to control, and optimize, in swarm formation, the trajectory of multiple ground robotic agents, while taking under consideration potential collisions. The data processing procedure for the time critical application of controlling the robots in a centralized manner, is offloaded to the edge machine, thus the framework benefits from the provided edge resources, features, and centralized optimal performance, while the latency remains bounded in desired values. Besides, real experiments were conducted as a proof-of-concept of the proposed framework to evaluate the system’s performance and effectiveness.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/access2022seisa.png" alt="IEEE ACCESS 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, B. Lindqvist, S. G. Satpute, and G. Nikolakopoulos, "An Edge Architecture for Enabling Autonomous Aerial Navigation with Embedded Collision Avoidance Through Remote Nonlinear Model Predictive Control," <em>Journal of Parallel and Distributed Computing</em>, p. 104 849, 2024. <a href="https://www.sciencedirect.com/science/article/pii/S0743731524000133"  target="_blank" class="text-warning">DOI:10.1016/j.jpdc.2024.104849</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In this article, we present an edge-based architecture for enhancing the autonomous capabilities of resource-constrained aerial robots by enabling a remote nonlinear model predictive control scheme, which can be computationally heavy to run on the aerial robots' onboard processors. The nonlinear model predictive control is used to control the trajectory of an unmanned aerial vehicle while detecting, and preventing potential collisions. The proposed edge architecture enables trajectory recalculation for resource-constrained unmanned aerial vehicles in relatively real-time, which will allow them to have fully autonomous behaviors. The architecture is implemented with a remote Kubernetes cluster on the edge side, and it is evaluated on an unmanned aerial vehicle as our controllable robot, while the robotic operating system is used for managing the source codes, and overall communication. With the utilization of edge computing and the architecture presented in this work, we can overcome computational limitations, that resource-constrained robots have, and provide or improve features that are essential for autonomous missions. At the same time, we can minimize the relative travel time delays for time-critical missions over the edge, in comparison to the cloud. We investigate the validity of this hypothesis by evaluating the system's behavior through a series of experiments by utilizing either the unmanned aerial vehicle or the edge resources for the collision avoidance mission.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/jpdc2024seisa.png" alt="JPDC 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>strong>, S. G. Satpute, B. Lindqvist, and G. Nikolakopoulos, "An Edge-Based Architecture for Oﬄoading Model Predictive Control for UAVs," <em>Robotics</em>, vol. 11, no. 4, p. 80, 2022 <a href="https://www.mdpi.com/2218-6581/11/4/80"  target="_blank" class="text-warning">DOI: 10.3390/robotics11040080 </a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - Thanks to the development of 5G networks, edge computing has gained popularity in several areas of technology in which the needs for high computational power and low time delays are essential. These requirements are indispensable in the field of robotics, especially when we are thinking in terms of real-time autonomous missions in mobile robots. Edge computing will provide the necessary resources in terms of computation and storage, while 5G technologies will provide minimal latency. High computational capacity is crucial in autonomous missions, especially for cases in which we are using computationally demanding high-level algorithms. In the case of Unmanned Aerial Vehicles (UAVs), the onboard processors usually have limited computational capabilities; therefore, it is necessary to offload some of these tasks to the cloud or edge, depending on the time criticality of the application. Especially in the case of UAVs, the requirement to have large payloads to cover the computational needs conflicts with other payload requirements, reducing the overall flying time and hindering autonomous operations from a regulatory perspective. In this article, we propose an edge-based architecture for autonomous UAV missions in which we offload the high-level control task of the UAV’s trajectory to the edge in order to take advantage of the available resources and push the Model Predictive Controller (MPC) to its limits. Additionally, we use Kubernetes to orchestrate our application, which runs on the edge and presents multiple experimental results that prove the efficacy of the proposed novel scheme.</p>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>M.-N. Stamatopoulos, P. Koustoumpardis, <strong>A. Seisa</strong>, and G. Nikolakopoulos, "Path Planning for Collaborative System of Tethered UAVs in Dynamic and Conﬁned Environments," <em>submitted</em>, 2024.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In this article, a novel collaborative tether transportation and path planning framework is introduced, aiming at applications in both static confined and dynamically changing environments. The path planning problem of the system of two Unmanned Aerial Vehicles (UAVs), connected by a rope hanging below them in a cluttered environment, is examined. It is tackled by either avoiding obstacles or passing through narrow openings. The degrees of freedom of the aerial system are simplified by a novel composition mechanism, where all the feasible and allowed states are represented in a compact form. For every state of the formation, a dynamic rigid body is calculated that encloses both the UAVs and the hanging rope curve, thus resulting in a faster and simpler collision-checking procedure, between the system and the rest of the environment. Based on the above simplifications, a Rapidly-exploring Random Trees (RRT) path planning scheme is executed by taking into account the current position and rotation of the surrounding obstacles. The novel reactive path planning and handling of the hanging rope are achieved by having the most recent formation path saved and improved in each iteration and in the case it is not valid anymore, due to a change in the obstacles, a new one is generated. In the sequel, the path is decomposed and fed back as the UAVs' reference positions, forming two trajectories that are fed to the Model Predictive Controller (MPC) of each one. The validity of the proposed framework has been extensively tested and verified by multiple scenarios with both static and dynamic obstacles.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/jras2024stamatopoulos.png" alt="JRAS 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/robotics2022seisa.png" alt="Robotics 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, B. Lindqvist, S. G. Satpute, and G. Nikolakopoulos, "E-CNMPC: Edge-Based Centralized Nonlinear Model Predictive Control for Multiagent Robotic Systems," <em>IEEE Access</em>, vol. 10, pp. 121 590–121 601, 2022. <a href="https://ieeexplore.ieee.org/document/9955515"  target="_blank" class="text-warning">DOI: 10.1109/ACCESS.2022.3223446</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - With the wide deployment of autonomous multi-agent robotic systems, control solutions based on centralized algorithms have been developed. Even though these centralized algorithms can optimize the performance of the multi-agent robotic systems, they require a lot of computational effort, and a centralized unit to undertake the entire process. Yet, many robotic platforms like some ground robots and even more, aerial robots, do not have the computing capacity to execute this kind of frameworks on their onboard computers. While cloud computing has been used as a solution for offloading computationally demanding robotic applications, from the robots to the cloud servers, the latency they introduce to the system has made them unsuitable for time sensitive applications. To overcome these challenges, this article promotes an Edge computing-based Centralized Nonlinear Model Predictive Control (E-CNMPC) framework to control, and optimize, in swarm formation, the trajectory of multiple ground robotic agents, while taking under consideration potential collisions. The data processing procedure for the time critical application of controlling the robots in a centralized manner, is offloaded to the edge machine, thus the framework benefits from the provided edge resources, features, and centralized optimal performance, while the latency remains bounded in desired values. Besides, real experiments were conducted as a proof-of-concept of the proposed framework to evaluate the system’s performance and effectiveness.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/access2022seisa.png" alt="IEEE ACCESS 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>strong>, S. G. Satpute, B. Lindqvist, and G. Nikolakopoulos, "An Edge-Based Architecture for Oﬄoading Model Predictive Control for UAVs," <em>Robotics</em>, vol. 11, no. 4, p. 80, 2022 <a href="https://www.mdpi.com/2218-6581/11/4/80"  target="_blank" class="text-warning">DOI: 10.3390/robotics11040080 </a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - Thanks to the development of 5G networks, edge computing has gained popularity in several areas of technology in which the needs for high computational power and low time delays are essential. These requirements are indispensable in the field of robotics, especially when we are thinking in terms of real-time autonomous missions in mobile robots. Edge computing will provide the necessary resources in terms of computation and storage, while 5G technologies will provide minimal latency. High computational capacity is crucial in autonomous missions, especially for cases in which we are using computationally demanding high-level algorithms. In the case of Unmanned Aerial Vehicles (UAVs), the onboard processors usually have limited computational capabilities; therefore, it is necessary to offload some of these tasks to the cloud or edge, depending on the time criticality of the application. Especially in the case of UAVs, the requirement to have large payloads to cover the computational needs conflicts with other payload requirements, reducing the overall flying time and hindering autonomous operations from a regulatory perspective. In this article, we propose an edge-based architecture for autonomous UAV missions in which we offload the high-level control task of the UAV’s trajectory to the edge in order to take advantage of the available resources and push the Model Predictive Controller (MPC) to its limits. Additionally, we use Kubernetes to orchestrate our application, which runs on the edge and presents multiple experimental results that prove the efficacy of the proposed novel scheme.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/robotics2022seisa.png" alt="Robotics 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -197,203 +199,229 @@
   
   <section id="conferences" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>Conference Proceedings</h2>
-      <div class="publication">
-        <p>V. N. Sankaranarayanan, <strong>A. S. Seisa</strong>, A. Saradagi, S. G. Satpute, and G. Nikolakopoulos, "Safe Coordinated Operation of a Coupled Aerial-Ground Multi-Robot System Enhanced by Edge Computing," <em>submitted</em>, 2025.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In this article, we propose a control architecture for the safe, coordinated operation of a multi-agent system with aerial (UAVs) and ground (UGVs) robots in a confined task space. We consider the case where the aerial and ground operations are coupled, enabled by the capability of the aerial robots to land on moving ground robots. The proposed method uses time-varying Control Barrier Functions (CBFs) to impose safety constraints associated with (i) collision avoidance between agents, (ii) landing of UAVs on mobile UGVs, and (iii) task space restriction. Further, this article addresses the challenge induced by the rapid increase in the number of CBF constraints with the increasing number of agents through a hybrid centralized-distributed coordination approach that determines the set of CBF constraints that is relevant for every aerial and ground agent at any given time. A centralized node (Watcher), hosted by an edge computing cluster, activates the relevant constraints, thus reducing the network complexity and the need for high onboard processing on the robots. The CBF constraints are enforced in a distributed manner by individual robots that run a nominal controller and safety filter locally to overcome latency and other network nonidealities. The proposed architecture is experimentally validated by demonstrating the safe, coordinated operation of multiple aerial and ground robots in a confined environment.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/sii2025viswa.png" alt="SII 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Dynamic Computational Resource Allocation for Ensuring Stability of Remote Edge-Based Controlled Multi-Agent Systems," in <em>2025 IEEE 23rd European Control Conference (ECC), accepted</em>, 2025.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/ecc2025seisa.png" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Conference Proceedings</h2>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>V. N. Sankaranarayanan, <strong>A. S. Seisa</strong>, A. Saradagi, S. G. Satpute, and G. Nikolakopoulos, "Safe Coordinated Operation of a Coupled Aerial-Ground Multi-Robot System Enhanced by Edge Computing," <em>submitted</em>, 2025.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In this article, we propose a control architecture for the safe, coordinated operation of a multi-agent system with aerial (UAVs) and ground (UGVs) robots in a confined task space. We consider the case where the aerial and ground operations are coupled, enabled by the capability of the aerial robots to land on moving ground robots. The proposed method uses time-varying Control Barrier Functions (CBFs) to impose safety constraints associated with (i) collision avoidance between agents, (ii) landing of UAVs on mobile UGVs, and (iii) task space restriction. Further, this article addresses the challenge induced by the rapid increase in the number of CBF constraints with the increasing number of agents through a hybrid centralized-distributed coordination approach that determines the set of CBF constraints that is relevant for every aerial and ground agent at any given time. A centralized node (Watcher), hosted by an edge computing cluster, activates the relevant constraints, thus reducing the network complexity and the need for high onboard processing on the robots. The CBF constraints are enforced in a distributed manner by individual robots that run a nominal controller and safety filter locally to overcome latency and other network nonidealities. The proposed architecture is experimentally validated by demonstrating the safe, coordinated operation of multiple aerial and ground robots in a confined environment.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/sii2025viswa.png" alt="SII 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, V. N. Sankaranarayanan, G. Damigos, S. G. Satpute, and G. Nikolakopoulos, "Cloud-Assisted Remote Control for Aerial Robots: From Theory to Proof-of-Concept Implementation," in <em>2025 IEEE 25th International Symposium on Cluster, Cloud and Internet Computing Workshops (CCGridW)</em>, 2025, pp. 171–176. <a href="https://ieeexplore.ieee.org/document/11044554" target="_blank" class="text-warning">DOI: 10.1109/CCGridW65158.2025.00032</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - Cloud robotics has emerged as a promising technology for robotics applications due to its advantages of offloading computationally intensive tasks, facilitating data sharing, and enhancing robot coordination. However, integrating cloud computing with robotics remains a complex challenge due to network latency, security concerns, and the need for efficient resource management. In this work, we present a scalable and intuitive framework for testing cloud and edge robotic systems. The framework consists of two main components enabled by containerized technology: (a) a containerized cloud cluster and (b) the containerized robot simulation environment. The system incorporates two endpoints of a User Datagram Protocol (UDP) tunnel, enabling bidirectional communication between the cloud cluster container and the robot simulation environment, while simulating realistic network conditions. To achieve this, we consider the use case of cloud-assisted remote control for aerial robots, while utilizing Linux-based traffic control to introduce artificial delay and jitter, replicating variable network conditions encountered in practical cloud-robot deployments.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/ccgrid2025seisa.png" alt="CCGridW 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, S. G. Satpute, and G. Nikolakopoulos, "Cloud-Based Scheduling Mechanism for Scalable and Resource-Efficient Centralized Controllers," in <em>IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society</em>, 2024, pp. 1–6. <a href="https://ieeexplore.ieee.org/document/10905254" target="_blank" class="text-warning">DOI: 10.1109/IECON55916.2024.10905254</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - This paper proposes a novel approach to address the challenges of deploying complex robotic software in large-scale systems, i.e., Centralized Nonlinear Model Predictive Controllers (CNMPCs) for multi-agent systems. The proposed approach is based on a Kubernetes-based scheduling mechanism designed to monitor and optimize the operation of CNMPCs, while addressing the scalability limitation of centralized control schemes. By leveraging a cluster in a real-time cloud environment, the proposed mechanism effectively offloads the computational burden of CNMPCs. Through experiments, we have demonstrated the effectiveness and performance of our system, especially in scenarios where the number of robots is subject to change. Our work contributes to the advancement of cloud-based control strategies and lays the foundation for enhanced performance in cloud-controlled robotic systems.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/iecon2024seisa.png" alt="IECON 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Dynamic Computational Resource Allocation for Ensuring Stability of Remote Edge-Based Controlled Multi-Agent Systems," in <em>2025 IEEE 23rd European Control Conference (ECC), accepted</em>, 2025.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/ecc2025seisa.png" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p>A. Berra, V. N. Sankaranarayanan, <strong>A. S. Seisa</strong>, et al., "Assisted Physical Interaction: Autonomous Aerial Robots with Neural Network Detection, Navigation, and Safety Layers," in <em>2024 International Conference on Unmanned Aircraft Systems (ICUAS)</em>, IEEE, 2024, pp. 1354–1361. <a href="https://ieeexplore.ieee.org/document/10557050" target="_blank" class="text-warning">DOI: 10.1109/ICUAS60882.2024.10557050</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - The paper introduces a novel framework for safe and autonomous aerial physical interaction in industrial settings. It comprises two main components: a neural network-based target detection system enhanced with edge computing for reduced onboard computational load, and a control barrier function (CBF)-based controller for safe and precise maneuvering. The target detection system is trained on a dataset under challenging visual conditions and evaluated for accuracy across various unseen data with changing lighting conditions. Depth features are utilized for target pose estimation, with the entire detection framework offloaded into low-latency edge computing. The CBF-based controller enables the UAV to converge safely to the target for precise contact. Simulated evaluations of both the controller and target detection are presented, alongside an analysis of real-world detection performance.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/icuas2024andrea.png" alt="ICUAS 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p>J. Mellet, A. Berra, <strong>A. S. Seisa</strong>, et al., "Design of a Flexible Robot Arm for Safe Aerial Physical Interaction," in <em>2024 IEEE 7th International Conference on Soft Robotics (RoboSoft)</em>, IEEE, 2024, pp. 1048–1053. <a href="https://ieeexplore.ieee.org/document/10522019" target="_blank" class="text-warning">DOI: 10.1109/RoboSoft60065.2024.10522019</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - This paper introduces a novel compliant mechanism combining lightweight and energy dissipation for aerial physical interaction. Weighting 400 g at take-off, the mechanism is actuated in the forward body direction, enabling precise position control for force interaction and various other aerial manipulation tasks. The robotic arm, structured as a closed-loop kinematic chain, employs two deported servomotors. Each joint is actuated with a single tendon for active motion control in compression of the arm at the end-effector. Its elasto-mechanical design reduces weight and provides flexibility, allowing passive-compliant interactions without impacting the motors' integrity. Notably, the arm's damping can be adjusted based on the proposed inner frictional bulges. Experimental applications showcase the aerial system performance in both free-flight and physical interaction. The presented work may open safer applications for  Micro Aerial Vehicle (MAV) in real environments subject to perturbations during interaction.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/robosoft2024mellet.png" alt="RoboSoft 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, V. N. Sankaranarayanan, G. Damigos, S. G. Satpute, and G. Nikolakopoulos, "Cloud-Assisted Remote Control for Aerial Robots: From Theory to Proof-of-Concept Implementation," in <em>2025 IEEE 25th International Symposium on Cluster, Cloud and Internet Computing Workshops (CCGridW)</em>, 2025, pp. 171–176. <a href="https://ieeexplore.ieee.org/document/11044554" target="_blank" class="text-warning">DOI: 10.1109/CCGridW65158.2025.00032</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - Cloud robotics has emerged as a promising technology for robotics applications due to its advantages of offloading computationally intensive tasks, facilitating data sharing, and enhancing robot coordination. However, integrating cloud computing with robotics remains a complex challenge due to network latency, security concerns, and the need for efficient resource management. In this work, we present a scalable and intuitive framework for testing cloud and edge robotic systems. The framework consists of two main components enabled by containerized technology: (a) a containerized cloud cluster and (b) the containerized robot simulation environment. The system incorporates two endpoints of a User Datagram Protocol (UDP) tunnel, enabling bidirectional communication between the cloud cluster container and the robot simulation environment, while simulating realistic network conditions. To achieve this, we consider the use case of cloud-assisted remote control for aerial robots, while utilizing Linux-based traffic control to introduce artificial delay and jitter, replicating variable network conditions encountered in practical cloud-robot deployments.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/ccgrid2025seisa.png" alt="CCGridW 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p>G. Damigos, <strong>A. S. Seisa</strong>, S. G. Satpute, T. Lindgren, and G. Nikolakopoulos, "A Resilient Framework for 5G-Edge-Connected UAVs Based on Switching Edge-MPC and Onboard-PID Control," in <em>2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)</em>, IEEE, 2023, pp. 1–8. <a href="https://ieeexplore.ieee.org/document/10228114" target="_blank" class="text-warning">DOI: 10.1109/ISIE51358.2023.10228114</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In recent years, the need for resources for handling processes with high computational complexity for mobile robots is becoming increasingly urgent. More specifically, robots need to autonomously operate in a robust and continuous manner, while keeping high performance, a need that led to the utilization of edge computing to offload many computationally demanding and time-critical robotic procedures. However, safe mechanisms should be implemented to handle situations when it is not possible to use the offloaded procedures, such as if the communication is challenged or the edge cluster is not available. To this end, this article presents a switching strategy for safety, redundancy, and optimized behavior through an edge computing-based Model Predictive Controller (MPC) and a low-level onboard-PID controller for edge-connected Unmanned Aerial Vehicles (UAVs). The switching strategy is based on the communication Key Performance Indicators (KPIs) over 5G to decide whether the UAV should be controlled by the edge-based or have a safe fallback based on the onboard controller.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/isie2023damigos.png" alt="ISIE 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p>V. N. Sankaranarayanan, G. Damigos, <strong>A. S. Seisa</strong>, S. G. Satpute, T. Lindgren, and G. Nikolakopoulos, "PACED-5G: Predictive Autonomous Control Using Edge for Drones Over 5G," in <em>2023 International Conference on Unmanned Aircraft Systems (ICUAS)</em>, IEEE, 2023, pp. 1155–1161. <a href="https://ieeexplore.ieee.org/document/10156241" target="_blank" class="text-warning">DOI: 10.1109/ICUAS57906.2023.10156241</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - With the advent of technologies such as Edge computing, the horizons of remote computational applications have broadened multi-dimensionally. Autonomous Unmanned Aerial Vehicle (UAV) mission is a vital application to utilize remote computation to catalyze its performance. However, offloading computational complexity to a remote system increases the latency in the system. Though technologies such as 5G networking minimize communication latency, the effects of latency on the control of UAVs are inevitable and may destabilize the system. Hence, it is essential to consider the delays in the system and compensate for them in the control design. Therefore, we propose a novel Edge-based predictive control architecture enabled by 5G networking, PACED-5G (Predictive Autonomous Control using Edge for Drones over 5G). In the proposed control architecture, we have designed a state estimator for estimating the current states based on the available knowledge of the time-varying delays, devised a Model Predictive controller (MPC) for the UAV to track the reference trajectory while avoiding obstacles, and provided an interface to offload the high-level tasks over Edge systems. The proposed architecture is validated in two experimental test cases using a quadrotor UAV.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/icuas2023viswa.png" alt="ICUAS 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, S. G. Satpute, and G. Nikolakopoulos, "Cloud-Based Scheduling Mechanism for Scalable and Resource-Efficient Centralized Controllers," in <em>IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society</em>, 2024, pp. 1–6. <a href="https://ieeexplore.ieee.org/document/10905254" target="_blank" class="text-warning">DOI: 10.1109/IECON55916.2024.10905254</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - This paper proposes a novel approach to address the challenges of deploying complex robotic software in large-scale systems, i.e., Centralized Nonlinear Model Predictive Controllers (CNMPCs) for multi-agent systems. The proposed approach is based on a Kubernetes-based scheduling mechanism designed to monitor and optimize the operation of CNMPCs, while addressing the scalability limitation of centralized control schemes. By leveraging a cluster in a real-time cloud environment, the proposed mechanism effectively offloads the computational burden of CNMPCs. Through experiments, we have demonstrated the effectiveness and performance of our system, especially in scenarios where the number of robots is subject to change. Our work contributes to the advancement of cloud-based control strategies and lays the foundation for enhanced performance in cloud-controlled robotic systems.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/iecon2024seisa.png" alt="IECON 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, N. Evangeliou, A. Tzes, and G. Nikolakopoulos, "Development and Experimental Evaluation of a 3DoF Tendon-Driven Probe for Robot Assisted Minimally Invasive Surgical Operations," in <em>2023 International Conference on Control, Automation and Diagnosis (ICCAD)</em>, IEEE, 2023, pp. 1–6. <a href="https://ieeexplore.ieee.org/document/10152334" target="_blank" class="text-warning">DOI: 10.1109/ICCAD57653.2023.10152334</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - Robotic surgery has been an upcoming scientific area for many years. However, several limitations have restricted the use of robotic surgery to a confined field of operations. In this context, the development and experimental evaluation of a novel prototype laparoscopic robotic surgical tool, that can expand the capabilities of the existing surgical robotic devices, is discussed in this article. Servo-motors are used as actuators in a tendon-driven actuation mechanism. The 3 Degree-of-Freedom (DoF) manipulator is a cascade configuration of three rotational joint modules, imitating the motions of a spherical wrist. The design, fabrication, and kinematics of the tool are presented, while the efficiency of the overall system is investigated through experimental studies, using an Inertial Measurement Unit (IMU) sensing modality as external reference.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/iccad2023seisa.jpg" alt="ICCAD 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p>M.-N. Stamatopoulos, P. Koustoumpardis, <strong>A. Seisa</strong>, and G. Nikolakopoulos, "Combined Aerial Cooperative Tethered Carrying and Path Planning for Quadrotors in Confined Environments," in <em>2023 31st Mediterranean Conference on Control and Automation (MED)</em>, 2023, pp. 364–369. <a href="https://ieeexplore.ieee.org/document/10185884" target="_blank" class="text-warning">DOI: 10.1109/MED59994.2023.10185884</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In this article, a novel aerial cooperative tethered carrying, and path planning framework is introduced with a special focus on applications in confined environments. The proposed work is aiming towards solving the path planning problem for the formation of two quadrotors, having a rope hanging below them and passing through or around obstacles. A novel composition mechanism is proposed, which simplifies the degrees of freedom of the combined aerial system and expresses the corresponding states in a compact form. Given the state of the composition, a dynamic body is generated that encapsulates the quadrotors-rope system and makes the procedure of collision checking between the system and the environment more efficient. By utilizing the above two abstractions, an RRT path planning scheme is implemented and a collision-free path for the formation is generated. This path is decomposed back to the quadrotors’ desired positions that are fed to the Model Predictive Controller (MPC) for each one. The efficiency of the proposed framework is experimentally evaluated.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/med2023stamatopoulos.png" alt="MED 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>A. Berra, V. N. Sankaranarayanan, <strong>A. S. Seisa</strong>, et al., "Assisted Physical Interaction: Autonomous Aerial Robots with Neural Network Detection, Navigation, and Safety Layers," in <em>2024 International Conference on Unmanned Aircraft Systems (ICUAS)</em>, IEEE, 2024, pp. 1354–1361. <a href="https://ieeexplore.ieee.org/document/10557050" target="_blank" class="text-warning">DOI: 10.1109/ICUAS60882.2024.10557050</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - The paper introduces a novel framework for safe and autonomous aerial physical interaction in industrial settings. It comprises two main components: a neural network-based target detection system enhanced with edge computing for reduced onboard computational load, and a control barrier function (CBF)-based controller for safe and precise maneuvering. The target detection system is trained on a dataset under challenging visual conditions and evaluated for accuracy across various unseen data with changing lighting conditions. Depth features are utilized for target pose estimation, with the entire detection framework offloaded into low-latency edge computing. The CBF-based controller enables the UAV to converge safely to the target for precise contact. Simulated evaluations of both the controller and target detection are presented, alongside an analysis of real-world detection performance.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/icuas2024andrea.png" alt="ICUAS 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, S. G. Satpute, and G. Nikolakopoulos, "Comparison Between Docker and Kubernetes Based Edge Architectures for Enabling Remote Model Predictive Control for Aerial Robots," in <em>IECON 2022 – 48th Annual Conference of the IEEE Industrial Electronics Society</em>, IEEE, 2022, pp. 1–6. <a href="https://ieeexplore.ieee.org/document/9968933?signout=success" target="_blank" class="text-warning">DOI: 10.1109/IECON49645.2022.9968933</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - Edge computing is becoming more and more popular among researchers who seek to take advantage of the edge resources and the minimal time delays, in order to run their robotic applications more efficiently. Recently, many edge architectures have been proposed, each of them having their advantages and disadvantages, depending on each application. In this work, we present two different edge architectures for controlling the trajectory of an Unmanned Aerial Vehicle (UAV). The first architecture is based on docker containers and the second one is based on Kubernetes, while the main framework for operating the robot is the Robotic Operating System (ROS). The efficiency of the overall proposed scheme is being evaluated through extended simulations for comparing the two architectures and the overall results obtained.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/iecon2022seisa.jpg" alt="IECON 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, S. G. Satpute, and G. Nikolakopoulos, "A Kubernetes-Based Edge Architecture for Controlling the Trajectory of a Resource-Constrained Aerial Robot by Enabling Model Predictive Control," in <em>2022 26th International Conference on Circuits, Systems, Communications and Computers (CSCC)</em>, IEEE, 2022, pp. 290–295. <a href="https://ieeexplore.ieee.org/document/10017904" target="_blank" class="text-warning">DOI: 10.1109/CSCC55931.2022.00056</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In recent years, cloud and edge architectures have gained tremendous focus for offloading computationally heavy applications. From machine learning and the Internet of Things (IoT) to industrial procedures and robotics, cloud computing has been used extensively for data processing and storage purposes, thanks to its “infinite” resources. On the other hand, cloud computing is characterized by long time delays due to the long distance between the cloud servers and the machine requesting the resources. In contrast, edge computing provides almost real-time services since edge servers are located significantly closer to the source of data. This capability sets edge computing as an ideal option for real-time applications, like high-level control, for resource-constrained platforms. In order to utilize the edge resources, several technologies, with basic ones such as containers and orchestrators like Kubernetes, have been developed to provide an environment with many features, based on each application's requirements. In this context, this works presents the implementation and evaluation of a novel edge architecture based on Kubernetes orchestration for controlling the trajectory of a resource-constrained Unmanned Aerial Vehicle (UAV) by enabling Model Predictive Control (MPC).</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/cscc2022seisa.png" alt="CSCC 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>J. Mellet, A. Berra, <strong>A. S. Seisa</strong>, et al., "Design of a Flexible Robot Arm for Safe Aerial Physical Interaction," in <em>2024 IEEE 7th International Conference on Soft Robotics (RoboSoft)</em>, IEEE, 2024, pp. 1048–1053. <a href="https://ieeexplore.ieee.org/document/10522019" target="_blank" class="text-warning">DOI: 10.1109/RoboSoft60065.2024.10522019</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - This paper introduces a novel compliant mechanism combining lightweight and energy dissipation for aerial physical interaction. Weighting 400 g at take-off, the mechanism is actuated in the forward body direction, enabling precise position control for force interaction and various other aerial manipulation tasks. The robotic arm, structured as a closed-loop kinematic chain, employs two deported servomotors. Each joint is actuated with a single tendon for active motion control in compression of the arm at the end-effector. Its elasto-mechanical design reduces weight and provides flexibility, allowing passive-compliant interactions without impacting the motors' integrity. Notably, the arm's damping can be adjusted based on the proposed inner frictional bulges. Experimental applications showcase the aerial system performance in both free-flight and physical interaction. The presented work may open safer applications for  Micro Aerial Vehicle (MAV) in real environments subject to perturbations during interaction.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/robosoft2024mellet.png" alt="RoboSoft 2024" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, S. G. Satpute, B. Lindqvist, and G. Nikolakopoulos, "An Edge Architecture Oriented Model Predictive Control Scheme for an Autonomous UAV Mission," in <em>2022 IEEE 31st International Symposium on Industrial Electronics (ISIE)</em>, IEEE, 2022, pp. 1195–1201. <a href="https://ieeexplore.ieee.org/document/9831701" target="_blank" class="text-warning">DOI: 10.1109/ISIE51582.2022.9831701</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - In this article the implementation of a controller and specifically of a Model Predictive Controller (MPC) on an Edge Computing device, for controlling the trajectory of an Unmanned Aerial  Vehicle (UAV) model, is examined. MPC requires more computation power in comparison to other controllers, such as PID or LQR, since it uses cost functions and optimization methods and iteratively predicts the output of the system and the control commands for some determined steps in the future (prediction horizon). Thus, the computation power required depends on the prediction horizon, the complexity of the cost functions, and the optimization. The more steps determined for the horizon, the more efficient the controller can be, but also more computation power is required. Since sometimes robots are not capable of managing all the computing processes locally, it is important to offload some computing processes from the robot to the cloud. But then some disadvantages may occur, such as latency and safety issues. Cloud computing may offer “infinity” computation power, but the whole system suffers in latency. A solution to this is the use of Edge Computing, which will reduce time delays since the Edge device is much closer to the source of data. Moreover, by using the Edge, we can offload the demanding controller from the UAV and set a longer prediction horizon and try to get a more efficient controller.</p>
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="images/isie2022seisa.jpg" alt="ISIE 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>G. Damigos, <strong>A. S. Seisa</strong>, S. G. Satpute, T. Lindgren, and G. Nikolakopoulos, "A Resilient Framework for 5G-Edge-Connected UAVs Based on Switching Edge-MPC and Onboard-PID Control," in <em>2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)</em>, IEEE, 2023, pp. 1–8. <a href="https://ieeexplore.ieee.org/document/10228114" target="_blank" class="text-warning">DOI: 10.1109/ISIE51358.2023.10228114</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In recent years, the need for resources for handling processes with high computational complexity for mobile robots is becoming increasingly urgent. More specifically, robots need to autonomously operate in a robust and continuous manner, while keeping high performance, a need that led to the utilization of edge computing to offload many computationally demanding and time-critical robotic procedures. However, safe mechanisms should be implemented to handle situations when it is not possible to use the offloaded procedures, such as if the communication is challenged or the edge cluster is not available. To this end, this article presents a switching strategy for safety, redundancy, and optimized behavior through an edge computing-based Model Predictive Controller (MPC) and a low-level onboard-PID controller for edge-connected Unmanned Aerial Vehicles (UAVs). The switching strategy is based on the communication Key Performance Indicators (KPIs) over 5G to decide whether the UAV should be controlled by the edge-based or have a safe fallback based on the onboard controller.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/isie2023damigos.png" alt="ISIE 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong>, G. Damigos, S. G. Satpute, A. Koval, and G. Nikolakopoulos, "Edge Computing Architectures for Enabling the Realisation of the Next Generation Robotic Systems," in <em>2022 30th Mediterranean Conference on Control and Automation (MED)</em>, IEEE, 2022, pp. 487–493. <a href="https://ieeexplore.ieee.org/document/9837289" target="_blank" class="text-warning">DOI: 10.1109/MED54222.2022.9837289</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - Edge Computing is a promising technology to provide new capabilities in technological fields that require instantaneous data processing. Researchers in areas such as machine and deep learning use extensively edge and cloud computing for their applications, mainly due to the significant computational and storage resources that they provide. Currently, Robotics is seeking to take advantage of these capabilities as well, and with the development of 5G networks, some existing limitations in the field can be overcome. In this context, it is important to know how to utilize the emerging edge architectures, what types of edge architectures and platforms exist today, and which of them can and should be used based on each robotic application. In general, Edge platforms can be implemented and used differently, especially since there are several providers offering more or less the same set of services with some essential differences. Thus, this study addresses these discussions for those who work in the development of the next generation robotic systems and will help to understand the advantages and disadvantages of each edge computing architecture in order to choose wisely the right one for each application.</p>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>V. N. Sankaranarayanan, G. Damigos, <strong>A. S. Seisa</strong>, S. G. Satpute, T. Lindgren, and G. Nikolakopoulos, "PACED-5G: Predictive Autonomous Control Using Edge for Drones Over 5G," in <em>2023 International Conference on Unmanned Aircraft Systems (ICUAS)</em>, IEEE, 2023, pp. 1155–1161. <a href="https://ieeexplore.ieee.org/document/10156241" target="_blank" class="text-warning">DOI: 10.1109/ICUAS57906.2023.10156241</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - With the advent of technologies such as Edge computing, the horizons of remote computational applications have broadened multi-dimensionally. Autonomous Unmanned Aerial Vehicle (UAV) mission is a vital application to utilize remote computation to catalyze its performance. However, offloading computational complexity to a remote system increases the latency in the system. Though technologies such as 5G networking minimize communication latency, the effects of latency on the control of UAVs are inevitable and may destabilize the system. Hence, it is essential to consider the delays in the system and compensate for them in the control design. Therefore, we propose a novel Edge-based predictive control architecture enabled by 5G networking, PACED-5G (Predictive Autonomous Control using Edge for Drones over 5G). In the proposed control architecture, we have designed a state estimator for estimating the current states based on the available knowledge of the time-varying delays, devised a Model Predictive controller (MPC) for the UAV to track the reference trajectory while avoiding obstacles, and provided an interface to offload the high-level tasks over Edge systems. The proposed architecture is validated in two experimental test cases using a quadrotor UAV.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/icuas2023viswa.png" alt="ICUAS 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
-            <div class="col-md-4 text-center">
-              <img src="images/med2022seisa.png" alt="MED 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, N. Evangeliou, A. Tzes, and G. Nikolakopoulos, "Development and Experimental Evaluation of a 3DoF Tendon-Driven Probe for Robot Assisted Minimally Invasive Surgical Operations," in <em>2023 International Conference on Control, Automation and Diagnosis (ICCAD)</em>, IEEE, 2023, pp. 1–6. <a href="https://ieeexplore.ieee.org/document/10152334" target="_blank" class="text-warning">DOI: 10.1109/ICCAD57653.2023.10152334</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - Robotic surgery has been an upcoming scientific area for many years. However, several limitations have restricted the use of robotic surgery to a confined field of operations. In this context, the development and experimental evaluation of a novel prototype laparoscopic robotic surgical tool, that can expand the capabilities of the existing surgical robotic devices, is discussed in this article. Servo-motors are used as actuators in a tendon-driven actuation mechanism. The 3 Degree-of-Freedom (DoF) manipulator is a cascade configuration of three rotational joint modules, imitating the motions of a spherical wrist. The design, fabrication, and kinematics of the tool are presented, while the efficiency of the overall system is investigated through experimental studies, using an Inertial Measurement Unit (IMU) sensing modality as external reference.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/iccad2023seisa.jpg" alt="ICCAD 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p>M.-N. Stamatopoulos, P. Koustoumpardis, <strong>A. Seisa</strong>, and G. Nikolakopoulos, "Combined Aerial Cooperative Tethered Carrying and Path Planning for Quadrotors in Confined Environments," in <em>2023 31st Mediterranean Conference on Control and Automation (MED)</em>, 2023, pp. 364–369. <a href="https://ieeexplore.ieee.org/document/10185884" target="_blank" class="text-warning">DOI: 10.1109/MED59994.2023.10185884</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In this article, a novel aerial cooperative tethered carrying, and path planning framework is introduced with a special focus on applications in confined environments. The proposed work is aiming towards solving the path planning problem for the formation of two quadrotors, having a rope hanging below them and passing through or around obstacles. A novel composition mechanism is proposed, which simplifies the degrees of freedom of the combined aerial system and expresses the corresponding states in a compact form. Given the state of the composition, a dynamic body is generated that encapsulates the quadrotors-rope system and makes the procedure of collision checking between the system and the environment more efficient. By utilizing the above two abstractions, an RRT path planning scheme is implemented and a collision-free path for the formation is generated. This path is decomposed back to the quadrotors’ desired positions that are fed to the Model Predictive Controller (MPC) for each one. The efficiency of the proposed framework is experimentally evaluated.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/med2023stamatopoulos.png" alt="MED 2023" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, S. G. Satpute, and G. Nikolakopoulos, "Comparison Between Docker and Kubernetes Based Edge Architectures for Enabling Remote Model Predictive Control for Aerial Robots," in <em>IECON 2022 – 48th Annual Conference of the IEEE Industrial Electronics Society</em>, IEEE, 2022, pp. 1–6. <a href="https://ieeexplore.ieee.org/document/9968933?signout=success" target="_blank" class="text-warning">DOI: 10.1109/IECON49645.2022.9968933</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - Edge computing is becoming more and more popular among researchers who seek to take advantage of the edge resources and the minimal time delays, in order to run their robotic applications more efficiently. Recently, many edge architectures have been proposed, each of them having their advantages and disadvantages, depending on each application. In this work, we present two different edge architectures for controlling the trajectory of an Unmanned Aerial Vehicle (UAV). The first architecture is based on docker containers and the second one is based on Kubernetes, while the main framework for operating the robot is the Robotic Operating System (ROS). The efficiency of the overall proposed scheme is being evaluated through extended simulations for comparing the two architectures and the overall results obtained.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/iecon2022seisa.jpg" alt="IECON 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, S. G. Satpute, and G. Nikolakopoulos, "A Kubernetes-Based Edge Architecture for Controlling the Trajectory of a Resource-Constrained Aerial Robot by Enabling Model Predictive Control," in <em>2022 26th International Conference on Circuits, Systems, Communications and Computers (CSCC)</em>, IEEE, 2022, pp. 290–295. <a href="https://ieeexplore.ieee.org/document/10017904" target="_blank" class="text-warning">DOI: 10.1109/CSCC55931.2022.00056</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In recent years, cloud and edge architectures have gained tremendous focus for offloading computationally heavy applications. From machine learning and the Internet of Things (IoT) to industrial procedures and robotics, cloud computing has been used extensively for data processing and storage purposes, thanks to its “infinite” resources. On the other hand, cloud computing is characterized by long time delays due to the long distance between the cloud servers and the machine requesting the resources. In contrast, edge computing provides almost real-time services since edge servers are located significantly closer to the source of data. This capability sets edge computing as an ideal option for real-time applications, like high-level control, for resource-constrained platforms. In order to utilize the edge resources, several technologies, with basic ones such as containers and orchestrators like Kubernetes, have been developed to provide an environment with many features, based on each application's requirements. In this context, this works presents the implementation and evaluation of a novel edge architecture based on Kubernetes orchestration for controlling the trajectory of a resource-constrained Unmanned Aerial Vehicle (UAV) by enabling Model Predictive Control (MPC).</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/cscc2022seisa.png" alt="CSCC 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, S. G. Satpute, B. Lindqvist, and G. Nikolakopoulos, "An Edge Architecture Oriented Model Predictive Control Scheme for an Autonomous UAV Mission," in <em>2022 IEEE 31st International Symposium on Industrial Electronics (ISIE)</em>, IEEE, 2022, pp. 1195–1201. <a href="https://ieeexplore.ieee.org/document/9831701" target="_blank" class="text-warning">DOI: 10.1109/ISIE51582.2022.9831701</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - In this article the implementation of a controller and specifically of a Model Predictive Controller (MPC) on an Edge Computing device, for controlling the trajectory of an Unmanned Aerial  Vehicle (UAV) model, is examined. MPC requires more computation power in comparison to other controllers, such as PID or LQR, since it uses cost functions and optimization methods and iteratively predicts the output of the system and the control commands for some determined steps in the future (prediction horizon). Thus, the computation power required depends on the prediction horizon, the complexity of the cost functions, and the optimization. The more steps determined for the horizon, the more efficient the controller can be, but also more computation power is required. Since sometimes robots are not capable of managing all the computing processes locally, it is important to offload some computing processes from the robot to the cloud. But then some disadvantages may occur, such as latency and safety issues. Cloud computing may offer “infinity” computation power, but the whole system suffers in latency. A solution to this is the use of Edge Computing, which will reduce time delays since the Edge device is much closer to the source of data. Moreover, by using the Edge, we can offload the demanding controller from the UAV and set a longer prediction horizon and try to get a more efficient controller.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/isie2022seisa.jpg" alt="ISIE 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong>, G. Damigos, S. G. Satpute, A. Koval, and G. Nikolakopoulos, "Edge Computing Architectures for Enabling the Realisation of the Next Generation Robotic Systems," in <em>2022 30th Mediterranean Conference on Control and Automation (MED)</em>, IEEE, 2022, pp. 487–493. <a href="https://ieeexplore.ieee.org/document/9837289" target="_blank" class="text-warning">DOI: 10.1109/MED54222.2022.9837289</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - Edge Computing is a promising technology to provide new capabilities in technological fields that require instantaneous data processing. Researchers in areas such as machine and deep learning use extensively edge and cloud computing for their applications, mainly due to the significant computational and storage resources that they provide. Currently, Robotics is seeking to take advantage of these capabilities as well, and with the development of 5G networks, some existing limitations in the field can be overcome. In this context, it is important to know how to utilize the emerging edge architectures, what types of edge architectures and platforms exist today, and which of them can and should be used based on each robotic application. In general, Edge platforms can be implemented and used differently, especially since there are several providers offering more or less the same set of services with some essential differences. Thus, this study addresses these discussions for those who work in the development of the next generation robotic systems and will help to understand the advantages and disadvantages of each edge computing architecture in order to choose wisely the right one for each application.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/med2022seisa.png" alt="MED 2022" class="img-fluid rounded shadow" style="max-height: 360px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -403,19 +431,21 @@
 
   <section id="books" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>Books & Chapters</h2>
-      <div class="publication">
-        <p><strong>A. S. Seisa</strong> and A. Koval, "Edge-Connected ARWs," in <em>Aerial Robotic Workers</em>, Elsevier, 2023, pp. 245–253. <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128149096000196?via%3Dihub"  target="_blank" class="text-warning">DOI: 10.1016/B978-0-12-814909-6.00019-6</a>.</p>
-        <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
-        <div class="abstract-container">
-          <div class="row align-items-center">
-            <!-- Text Column -->
-            <div class="col-md-8">
-              <p><strong>Abstract</strong> - This chapter focuses on edge computing that is a key technology of industry 4.0 for ARWs and robotic platforms in general. In many missions, ARWs and robots are required to operate autonomously, which commonly means the development of computationally heavy and demanding algorithms. In an effort to expand their capabilities, edge computing has been established as a promising solution. With its utilization, ARWs can take the advantage of edge-significant resources, thus allowing the offloading of the computationally intense processes. Similar to the cloud robotics systems that are associated with high network communication costs, the edge robotics provide minimal latency, since the edge layer is located much closer to the robots. Thus, ARWs can successfully operate in real-time. The integration of edge computing with ARWs and robotic platforms can enable an ecosystem where robots can communicate and collaborate with each other and operators in accomplishing challenging tasks with high performance and in real-time.</p>
-            </div>
-            <!-- Image Column -->
-            <div class="col-md-4 text-center">
-              <img src="images/arw2023nikolakopoulos.jpg" alt="ARW 2023" class="img-fluid rounded shadow" style="max-height: 260px;">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Books & Chapters</h2>
+        <div class="publication">
+          <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+            <p><strong>A. S. Seisa</strong> and A. Koval, "Edge-Connected ARWs," in <em>Aerial Robotic Workers</em>, Elsevier, 2023, pp. 245–253. <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128149096000196?via%3Dihub"  target="_blank" class="text-warning">DOI: 10.1016/B978-0-12-814909-6.00019-6</a>.</p>
+            <a href="#" class="btn btn-sm btn-outline-light ms-2 toggle-abstract">Read more</a>
+            <div class="abstract-container">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <p><strong>Abstract</strong> - This chapter focuses on edge computing that is a key technology of industry 4.0 for ARWs and robotic platforms in general. In many missions, ARWs and robots are required to operate autonomously, which commonly means the development of computationally heavy and demanding algorithms. In an effort to expand their capabilities, edge computing has been established as a promising solution. With its utilization, ARWs can take the advantage of edge-significant resources, thus allowing the offloading of the computationally intense processes. Similar to the cloud robotics systems that are associated with high network communication costs, the edge robotics provide minimal latency, since the edge layer is located much closer to the robots. Thus, ARWs can successfully operate in real-time. The integration of edge computing with ARWs and robotic platforms can enable an ecosystem where robots can communicate and collaborate with each other and operators in accomplishing challenging tasks with high performance and in real-time.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <img src="images/arw2023nikolakopoulos.jpg" alt="ARW 2023" class="img-fluid rounded shadow" style="max-height: 260px;">
+                </div>
+              </div>
             </div>
           </div>
         </div>
