@@ -7,6 +7,7 @@
   <title>News | Achilleas Santi Seisa</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
@@ -52,6 +53,11 @@
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255,255,255, 0.8 %29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
+    #social-icons a {
+      outline: none;
+      box-shadow: none;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -85,14 +91,48 @@
 
   <section class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
-      <h2>News</h2>
-      <p>
-        My news
-      </p>
+      <h1>Latest News</h1>
     </div>
   </section>
 
+  <div class="d-flex align-items-center my-5">
+    <hr class="flex-grow-1 border-secondary">
+    <span class="px-3 text-warning">2025</span>
+    <hr class="flex-grow-1 border-secondary">
+  </div>
 
+  <div class="d-flex align-items-center my-5">
+    <hr class="flex-grow-1 border-secondary">
+    <span class="px-3 text-warning">2024</span>
+    <hr class="flex-grow-1 border-secondary">
+  </div>
+
+  <section id="social-icons" class="section text-center" style="color: white;" data-aos="fade-up">
+    <hr class="my-5 border-secondary">
+    <div>
+      <a href="mailto:achilleas.seisa@gmail.com" class="me-3">
+        <i class="fas fa-envelope fa-2xl text-warning"></i>
+      </a>
+      <a href="https://orcid.org/0000-0001-9685-1026" class="me-3">
+        <i class="ai ai-orcid fa-2xl text-warning"></i>
+      </a>
+      <a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" class="me-3">
+        <i class="ai ai-google-scholar fa-2xl text-warning"></i>
+      </a>
+      <a href="https://www.researchgate.net/profile/Achilleas-Seisa" class="me-3">
+        <i class="ai ai-researchgate fa-2xl text-warning"></i>
+      </a>
+      <a href="https://www.semanticscholar.org/author/Achilleas-Santi-Seisa/2179236924" class="me-3">
+        <i class="ai ai-semantic-scholar fa-2xl text-warning"></i>
+      </a>
+      <a href="https://github.com/achilleas2942" class="me-3">
+        <i class="fab fa-github fa-2xl text-warning"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/seisa/" class="me-3">
+        <i class="fab fa-linkedin fa-2xl text-warning"></i>
+      </a>
+    </div>
+  </section>
 
   <footer style="color:white;">
     &copy; Achilleas Santi Seisa | Sweden 🇸🇪 | Last updated: 2025
@@ -102,9 +142,9 @@
     document.querySelectorAll('.toggle-abstract').forEach(button => {
       button.addEventListener('click', function (e) {
         e.preventDefault();
-        const abstract = this.nextElementSibling;
-        const isVisible = abstract.style.display === 'block';
-        abstract.style.display = isVisible ? 'none' : 'block';
+        const target = document.querySelector(this.dataset.target);
+        const isVisible = target.style.display === 'block';
+        target.style.display = isVisible ? 'none' : 'block';
         this.textContent = isVisible ? 'Read more' : 'Read less';
       });
     });
