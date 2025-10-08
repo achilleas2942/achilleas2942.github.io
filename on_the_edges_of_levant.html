@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achilleas Santi Seisa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      padding-top: 4rem;
+      background: linear-gradient(to right, #0a1b2c, #132c48);
+    }
+    .navbar {
+      background-color: #000000 !important;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #d3d3d3 !important;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-image: url('back.png');
+      background-size: cover;
+      background-size: 100% 100%;
+      color: white;
+    }
+    .hero img {
+      max-width: 240px;
+      border-radius: 50%;
+      margin-top: 1rem;
+      border: 4px solid white;
+    }
+    .section {
+      padding: 3rem 1rem;
+    }
+    .project-logo {
+      height: 120px;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #000000;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .project, .publication, .education, .experience {
+      margin-bottom: 1.5rem;
+    }
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255,255,255, 0.8 %29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    #social-icons a {
+      outline: none;
+      box-shadow: none;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Achilleas Santi Seisa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-outline-warning ms-2" href="cv.pdf" target="_blank" role="button">CV</a></li>
+          <li class="nav-item"><a class="btn btn-outline-warning ms-2" href="on_the_edges_of_levant.html">On the Edges of Levant</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro -->
+  <section class="hero" style="color:white;">
+    <div class="container">
+      <img src="profile.png" alt="Achilleas Santi Seisa">
+      <h1>Achilleas Santi Seisa</h1>
+      <p>Hi there and welcome to my page 👋</p>
+    </div>
+  </section>
+
+  <!-- About me -->
+  <section id="about" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>About Me</h2>
+        <p>My name is Achilleas and I am a robotics researcher with 4+ years of experience in edge-enabled autonomous systems, UAV control, scalable cloud-robot architectures, and industrial automation. I am currently pursuing my Ph.D. at Luleå University of Technology in the field of robotics, control systems, and edge computing.</p>
+        <div class="p-3 rounded shadow mt-4" style="border: 2px solid #555; background-color: transparent;">
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              🦾 I’m working on <strong>Edge Robotics</strong> with the <a href="https://www.fieldrobotics.eu/" target="_blank" class="text-warning">Robotics and AI Team</a> at Luleå University of Technology
+            </li>
+            <li class="mb-3">
+              🖥️ I’m mainly working with ROS 1 / ROS 2 | Python | C++ | Docker | Kubernetes
+            </li>
+            <li class="mb-3">
+              💬 Feel free to ask me anything about robotics, edge computing, or autonomy on my <a href="https://github.com/achilleas2942/achilleas2942/discussions" target="_blank" class="text-warning">GitHub discussions</a>
+            </li>
+            <li class="mb-3">
+              💼 You can also reach out to me on <a href="https://www.linkedin.com/in/seisa" target="_blank" class="text-warning">LinkedIn</a>
+            </li>
+            <li class="mb-3">
+              📫 Or email me here: <a href="mailto:achilleas.seisa@gmail.com" target="_blank" class="text-warning">achilleas.seisa@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <a href="about.html" class="btn btn-outline-light mt-3">More about myself</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Latest News</h2>
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="news">
+              <div><strong>Participation at European Control Conference 2025, Thessaloniki, Greece</strong></div>
+              <div>In June 2025, I travelled to Thessaloniki Greece, to attend the 23rd European Control Conference (ECC), and present my work entitled "Dynamic Computational Resource Allocation for Ensuring Stability of Remote Edge-Based Controlled Multi-Agent Systems".</div>
+              <div><strong>Abstract</strong> - This article presents a novel edge-based architecture to dynamically allocate resources to edge-offloaded controllers for multi-agent systems. The proposed controllers are designed to generate collision-free trajectories to track the desired reference positions. The computational complexity of the controllers' problem is estimated by a second-order polynomial regression model, while the Least Squares minimization technique is employed for the coefficients' estimation. The covariance matrix plays an essential role in assessing the confidence in the parameter estimates and in investigating correlations among parameters. Through this curve fitting process, we can dynamically estimate the complexity of the controllers' problem as conditions change, enabling effective and responsive resource allocation. Furthermore, a novel control law is designed to control the dynamic resource allocation, based on the measured communication and processing time delays. This approach allows us to control the controllers' response time, thereby ensuring the closed-loop system's stability. The overall architecture is enabled through a Kubernetes cluster and is experimentally evaluated.</div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="images/ecc2025.jpg" alt="ECC 2025" class="img-fluid rounded shadow" style="max-height: 360px;">
+          </div>
+        </div>
+        <a href="news.html" class="btn btn-outline-light mt-3">More news</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Experience</h2>
+        <div class="experience">
+          <strong>CTO & Co-Founder</strong> at <a href="https://8-d.ai/" target="_blank" class="text-warning">Eighth Dimension GmbH</a>
+          <span class="fs-6 text-white-50 mb-4"><small>Jan. 2025 – Present · Munich, Germany</small></span>
+        </div>
+        <div class="experience">
+          <strong>Ph.D. Researcher</strong> at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a>
+          <span class="fs-6 text-white-50 mb-4"><small>Sep. 2021 – Present · Robotics and AI Team, Luleå, Sweden</small></span>
+        </div>
+        <div class="experience">
+          <strong>Visiting Researcher</strong> at <a href="https://www.epiroc.com/" target="_blank" class="text-warning">Epiroc</a>
+          <span class="fs-6 text-white-50 mb-4"><small>Jun. 2025 (1 week) · Automation Lab, Örebro, Sweden</small></span>
+        </div>
+        <div class="experience">
+          <strong>Visiting Researcher</strong> at <a href="https://www.ericsson.com/en" target="_blank" class="text-warning">Ericsson</a>
+          <span class="fs-6 text-white-50 mb-4"><small>Jan. 2023 – May 2023 · Cloud and Technology, Lund, Sweden</small></span>
+        </div>
+        <div class="experience">
+          <strong>Automation Engineer</strong> at <a href="https://www.icsystems-eg.com/" target="_blank" class="text-warning">Rockwell Automation (I.C. SYSTEMS)</a>
+          <span class="fs-6 text-white-50 mb-4"><small>Mar. 2021 – Aug. 2021 · Athens, Greece</small></span>
+        </div>
+        <a href="experience.html" class="btn btn-outline-light mt-3">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Education</h2>
+        <div class="education">
+          <p class="mb-1"><strong>Ph.D. Candidate</strong> at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a> – Towards the Next Generation Robotic Autonomy on the Edge: Scalability, Resiliency, and Dynamic Resource Allocation</p>
+          <span class="fs-6 text-white-50 mb-4"><small>2025 · Robotics and AI Team, Luleå, Sweden</small></span>
+        </div>
+        <div class="education">
+          <p class="mb-1"><strong>Licentiate of Engineering</strong> at <a href="https://www.ltu.se/en" target="_blank" class="text-warning">Luleå University of Technology</a> – <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1799036&dswid=8784" target="_blank" class="text-warning">Towards Enabling the Next Generation of Edge Controlled Robotic Systems</a></p>
+          <span class="fs-6 text-white-50 mb-4"><small>2023 · Robotics and AI Team, Luleå, Sweden</small></span>
+        </div>
+        <div class="education">
+          <p class="mb-1"><strong>Integrated Master's</strong> at <a href="https://www.upatras.gr/en/" target="_blank" class="text-warning">University of Patras</a> – <a href="https://nemertes.library.upatras.gr/items/aadd0092-a40a-4b2b-a781-de9a10572c4e" target="_blank" class="text-warning">Development and Control of an Advanced Robotic Tool for Minimally Invasive Surgical Operations</a></p>
+          <span class="fs-6 text-white-50 mb-4"><small>2020 · Patras, Greece</small></span>
+        </div>
+        <a href="education.html" class="btn btn-outline-light mt-3">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Selected Publications</h2>
+        <div class="publication"><strong>A. S. Seisa</strong>, B. Lindqvist, S. G. Satpute, and G. Nikolakopoulos, "An Edge Architecture for Enabling Autonomous Aerial Navigation with Embedded Collision Avoidance Through Remote Nonlinear Model Predictive Control," <em>Journal of Parallel and Distributed Computing</em>, p. 104 849, 2024. <a href="https://www.sciencedirect.com/science/article/pii/S0743731524000133"  target="_blank" class="text-warning">DOI:10.1016/j.jpdc.2024.104849</a>.</div>
+        <div class="publication"><strong>A. S. Seisa</strong>, B. Lindqvist, S. G. Satpute, and G. Nikolakopoulos, "E-CNMPC: Edge-Based Centralized Nonlinear Model Predictive Control for Multiagent Robotic Systems," <em>IEEE Access</em>, vol. 10, pp. 121 590–121 601, 2022. <a href="https://ieeexplore.ieee.org/document/9955515"  target="_blank" class="text-warning">DOI: 10.1109/ACCESS.2022.3223446</a>.</div>
+        <div class="publication"><strong>A. S. Seisa</strong>, S. Kotpalliwar, S. G. Satpute, and G. Nikolakopoulos, "Dynamic Computational Resource Allocation for Ensuring Stability of Remote Edge-Based Controlled Multi-Agent Systems," in <em>2025 IEEE 23rd European Control Conference (ECC), accepted</em>, 2025.</div>
+        <a href="publications.html" class="btn btn-outline-light mt-3">See full publication list</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container text-center">
+      <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
+        <h2>Contributions to EU and Swedish Funded Projects</h2>
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://ambitious-project.eu/" target="_blank"><img src="images/ambitious.jpg" alt="AMBITIOUS" class="project-logo" title="AMBITIOUS"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://sunrise6g.eu/" target="_blank"><img src="images/sunrise6g.jpeg" alt="SUNRISE-6G" class="project-logo" title="SUNRISE-6G"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://www.aerotrain-etn.eu/" target="_blank"><img src="images/aerotrain1.png" alt="AERO-TRAIN" class="project-logo" title="AERO-TRAIN"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://www.persephone-mining.eu/" target="_blank"><img src="images/persephone.png" alt="PERSEPHONE" class="project-logo" title="PERSEPHONE"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://www.vinnova.se/en/p/5g-edge-innovations-for-mining/" target="_blank"><img src="images/5gedge.png" alt="5GEIM" class="project-logo" title="5GEIM"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://www.interreg-npa.eu/projects/arctic-edge/" target="_blank"><img src="images/arctic-edge.jpg" alt="ARCTIC EDGE" class="project-logo" title="ARCTIC EDGE"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://digital-skills-jobs.europa.eu/en/reboot-skills" target="_blank"><img src="images/REBOOT.jpeg" alt="REBOOT SKILLS" class="project-logo" title="REBOOT SKILLS"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="https://www.vinnova.se/en/p/g-drones/" target="_blank"><img src="images/G-Drones-logo.png" alt="G-DRONES" class="project-logo" title="G-DRONES"></a>
+          </div>
+        </div>
+        <a href="projects.html" class="btn btn-outline-light mt-4">Read about the projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section" style="color:white;" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="row">
+        <!-- Contact Info or Form -->
+        <div class="col-md-6">
+          <p>☎ Phone Number: <span class="text-warning">+46 730926670</span></p>
+          <p><i class="fas fa-envelope fa-lg"></i> Email: <a href="mailto:achilleas.seisa@gmail.com" target="_blank" class="text-warning">achilleas.seisa@gmail.com</a></p>
+          <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/achilleas2942" target="_blank" class="text-warning">achilleas2942</a></p>
+          <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/seisa" target="_blank" class="text-warning">linkedin.com/in/seisa</a></p>
+        </div>
+        <!-- Google Map -->
+        <div class="col-md-6">
+          <div style="max-height: 240px; overflow: hidden;">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30436.288498289006!2d22.13158675!3d65.61816515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467f65107e1643cf%3A0x94ef40407f9e06f7!2zQ2FtcHVzOiBBMTU0NSwgTHVsZcOl!5e1!3m2!1sen!2sse!4v1752552425836!5m2!1sen!2sse"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="social-icons" class="section text-center" style="color: white;" data-aos="fade-up">
+    <hr class="my-5 border-secondary">
+    <div>
+      <a href="mailto:achilleas.seisa@gmail.com" class="me-3">
+        <i class="fas fa-envelope fa-2xl text-warning"></i>
+      </a>
+      <a href="https://orcid.org/0000-0001-9685-1026" class="me-3">
+        <i class="ai ai-orcid fa-2xl text-warning"></i>
+      </a>
+      <a href="https://scholar.google.com/citations?user=xYz8b18AAAAJ&hl=en" class="me-3">
+        <i class="ai ai-google-scholar fa-2xl text-warning"></i>
+      </a>
+      <a href="https://www.researchgate.net/profile/Achilleas-Seisa" class="me-3">
+        <i class="ai ai-researchgate fa-2xl text-warning"></i>
+      </a>
+      <a href="https://www.semanticscholar.org/author/Achilleas-Santi-Seisa/2179236924" class="me-3">
+        <i class="ai ai-semantic-scholar fa-2xl text-warning"></i>
+      </a>
+      <a href="https://github.com/achilleas2942" class="me-3">
+        <i class="fab fa-github fa-2xl text-warning"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/seisa/" class="me-3">
+        <i class="fab fa-linkedin fa-2xl text-warning"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer style="color:white;">
+    &copy; Achilleas Santi Seisa | Sweden 🇸🇪 | Last updated: 2025
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,       // animation duration in ms
+        offset: 100,         // trigger offset from the bottom
+        once: false,         // animation happens every time you scroll
+        mirror: true         // fade out when scrolling back up
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+  
+</html>
