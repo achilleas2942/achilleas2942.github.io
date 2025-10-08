@@ -11,19 +11,20 @@
 
   <style>
     :root{
+      --bg:#fbfaf8;
       --accent:#2b2b6a; /* deep indigo */
-      --muted:#f4f4f4;
-      --radius:14px;
-      --mono: 'Inter', system-ui, sans-serif;
-      --serif: 'Merriweather', serif;
+      --muted:#6b7280;
       --orange:#FFA500; /* sunrise orange */
+      --radius:14px;
+      --mono:'Inter', system-ui, sans-serif;
+      --serif:'Merriweather', serif;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%;scroll-behavior:smooth;}
     body{
-      margin:0;
       font-family:var(--mono);
+      background:var(--bg);
       color:#111827;
       line-height:1.6;
     }
@@ -34,30 +35,37 @@
       top:0;left:0;right:0;
       background:var(--accent);
       display:flex;
-      align-items:center;
       justify-content:center;
+      align-items:center;
       gap:30px;
-      padding:15px 30px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+      padding:15px 25px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.3);
       z-index:1000;
-    }
-    nav .home-icon {
-      margin-right:auto; /* push other links to center/right */
-      font-size:22px;
-      text-decoration:none;
-      color:white;
     }
     nav a{
       text-decoration:none;
       font-weight:600;
       color:white;
+      display:flex;
+      align-items:center;
+      gap:6px;
     }
-    nav a:hover{opacity:0.7;}
+    nav a:hover{opacity:0.8;}
+    nav .home-link{
+      position:absolute;
+      left:20px;
+    }
+    .home-link svg{
+      width:22px;
+      height:22px;
+      fill:white;
+      vertical-align:middle;
+    }
     .button-link{
       padding:6px 12px;
-      background:#fff;
-      color:var(--accent)!important;
+      background:#e6e9f5;
       border-radius:var(--radius);
+      color:var(--accent)!important;
     }
 
     /* Hero */
@@ -69,30 +77,32 @@
       height:100vh;
       text-align:center;
       padding:20px;
-      background:#fff;
+      background:url('hero.jpg') center/cover fixed no-repeat;
+      color:white;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
     .hero h1{
       font-family:var(--serif);
       font-size:clamp(42px,7vw,80px);
-      color:var(--accent);
       margin-bottom:12px;
     }
     .hero p{
       font-size:18px;
-      color:#444;
       max-width:600px;
     }
 
     /* Sections */
     section{
       height:100vh;
-      padding:120px 20px 60px; /* extra top padding for nav */
-      text-align:center;
+      padding:100px 20px 60px;
       display:flex;
       flex-direction:column;
       justify-content:center;
+      align-items:center;
+      text-align:center;
       background-size:cover;
       background-position:center;
+      background-repeat:no-repeat;
       background-attachment:fixed;
       color:white;
       position:relative;
@@ -101,26 +111,25 @@
       content:"";
       position:absolute;
       top:0;left:0;right:0;bottom:0;
-      background:rgba(0,0,0,0.45); /* overlay for readability */
+      background:rgba(0,0,0,0.4);
+      z-index:0;
     }
-    section > *{
-      position:relative;
-      z-index:2;
-    }
+    section > *{position:relative;z-index:1;}
     section h2{
       font-family:var(--serif);
-      font-size:42px;
+      font-size:48px;
       margin-bottom:30px;
-      color:#fff;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
     .post-preview{
-      max-width:700px;
+      width:600px;
       margin:0 auto 20px;
       text-align:left;
-      background:rgba(255,255,255,0.9);
+      background:rgba(255,255,255,0.85);
       padding:20px;
       border-radius:var(--radius);
       box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      color:#111827;
     }
     .post-preview h3{
       margin:0 0 6px;
@@ -134,7 +143,6 @@
     .post-preview a{
       display:inline-block;
       margin-top:8px;
-      margin-right:15px;
       color:var(--accent);
       font-weight:600;
       text-decoration:none;
@@ -146,30 +154,38 @@
       text-align:center;
       font-weight:700;
       font-size:20px;
-      color:#fff;
+      color:white;
       text-decoration:none;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
 
-    /* Subscribe */
+    /* Section backgrounds */
+    #science{background-image:url('science.jpg');}
+    #technology{background-image:url('technology.jpg');}
+    #history{background-image:url('history.JPG');}
+    #geopolitics{background-image:url('geopolitical.JPG');}
+    #culture{background-image:url('culture.jpg');}
+    #subscribe{background-image:url('subscribe.jpg');}
+
+    /* Subscribe section */
     #subscribe{
-      background:var(--muted) url('subscribe.jpg') center/cover fixed;
-      height:100vh;
+      height:80vh;
       display:flex;
       flex-direction:column;
       justify-content:center;
       align-items:center;
       text-align:center;
-      padding:20px;
+      color:white;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
-    #subscribe h2{font-family:var(--serif);color:#fff;margin-bottom:12px;font-size:42px;}
-    #subscribe p{color:#fff;}
+    #subscribe h2{font-family:var(--serif);margin-bottom:12px;}
     #subscribe form{display:flex;gap:10px;margin-top:20px;}
     #subscribe input{padding:10px;border:1px solid #ccc;border-radius:var(--radius);}
     #subscribe button{padding:10px 20px;border:none;border-radius:var(--radius);background:var(--orange);color:var(--accent);font-weight:700;cursor:pointer;}
     .external-link-box{
       margin-top:100px;
       padding:15px 20px;
-      background:#fff;
+      background:#e6e9f5;
       border-radius:var(--radius);
       display:inline-block;
     }
@@ -187,20 +203,17 @@
       background:var(--orange);
       color:var(--accent);
     }
-
-    /* Section backgrounds */
-    #science{background-image:url('science.jpg');}
-    #technology{background-image:url('technology.jpg');}
-    #history{background-image:url('history.JPG');}
-    #geopolitics{background-image:url('geopolitical.JPG');}
-    #culture{background-image:url('culture.jpg');}
   </style>
 </head>
 <body>
 
-  <!-- Nav -->
+  <!-- Navbar -->
   <nav>
-    <a href="#hero" class="home-icon">🏠</a>
+    <a href="#top" class="home-link" title="Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 3l10 9h-3v9h-6v-6H11v6H5v-9H2z"/>
+      </svg>
+    </a>
     <a href="#science">Science</a>
     <a href="#technology">Technology</a>
     <a href="#history">History</a>
@@ -211,7 +224,7 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero" id="hero">
+  <section class="hero" id="top">
     <h1>On the Edges of Levant</h1>
     <p>Personal reflections on science, technology, history, culture and society. Views are my own and independent from my professional work.</p>
   </section>
@@ -313,6 +326,5 @@
   <footer>
     © Achilleas Santi Seisa — On the Edges of Levant · This blog reflects my personal views
   </footer>
-
 </body>
 </html>
