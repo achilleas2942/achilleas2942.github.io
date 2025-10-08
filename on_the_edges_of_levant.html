@@ -28,6 +28,10 @@
       color:#111827;
       line-height:1.6;
     }
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
     /* Navbar */
     nav{
@@ -257,7 +261,8 @@
     @media (max-width: 900px) {
       nav {
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 16px 20px; /* a bit taller for burger visibility */
+        height: 60px; /* ensures enough vertical space */
       }
 
       .nav-links {
@@ -265,12 +270,13 @@
         flex-direction: column;
         background: rgba(43,43,106,0.95);
         position: absolute;
-        top: 60px;
+        top: 60px; /* aligns perfectly below navbar */
         left: 0;
         right: 0;
         text-align: center;
         padding: 20px 0;
         gap: 20px;
+        margin: 0; /* removes unwanted top gap */
       }
 
       .nav-links.active {
@@ -279,6 +285,19 @@
 
       .burger {
         display: flex;
+        position: absolute;
+        right: 20px;
+        top: 18px; /* centers it vertically in the navbar */
+        cursor: pointer;
+      }
+
+      .burger div {
+        width: 26px;
+        height: 3px;
+        background-color: white;
+        margin: 4px;
+        border-radius: 2px;
+        transition: all 0.3s ease;
       }
     }
 
