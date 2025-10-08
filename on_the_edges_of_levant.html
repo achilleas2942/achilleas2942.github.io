@@ -14,6 +14,7 @@
       --bg:#fbfaf8;
       --accent:#2b2b6a; /* deep indigo */
       --muted:#6b7280;
+      --orange:#FFA500; /* sunrise orange */
       --radius:14px;
       --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
       --serif: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
@@ -33,7 +34,7 @@
     nav{
       position:fixed;
       top:0;left:0;right:0;
-      background:white;
+      background:var(--accent);
       display:flex;
       justify-content:center;
       align-items:center;
@@ -45,13 +46,14 @@
     nav a{
       text-decoration:none;
       font-weight:600;
-      color:var(--accent);
+      color:white;
     }
     nav a:hover{opacity:0.7;}
     .button-link{
       padding:6px 12px;
       background:#e6e9f5;
       border-radius:var(--radius);
+      color:var(--accent)!important;
     }
 
     /* Fullscreen hero */
@@ -91,13 +93,13 @@
     }
     section h2{
       font-family:var(--serif);
-      font-size:32px;
-      margin-bottom:20px;
+      font-size:42px;
+      margin-bottom:30px;
       color:white;
       text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
     .post-preview{
-      max-width:600px;
+      width:600px;
       margin:0 auto 20px;
       text-align:left;
       background:rgba(255,255,255,0.85);
@@ -128,7 +130,8 @@
       margin-top:15px;
       display:block;
       text-align:center;
-      font-weight:600;
+      font-weight:700;
+      font-size:20px;
       color:white;
       text-decoration:none;
       text-shadow:0 2px 6px rgba(0,0,0,0.6);
@@ -144,7 +147,7 @@
     /* Subscribe section */
     #subscribe{
       background:url('subscribe.jpg') center/cover no-repeat;
-      height:80vh;
+      height:100vh;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -155,9 +158,9 @@
       text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
     #subscribe h2{font-family:var(--serif);margin-bottom:12px;}
-    #subscribe form{display:flex;gap:10px;margin-top:10px;}
+    #subscribe form{display:flex;gap:10px;margin-top:20px;}
     #subscribe input{padding:10px;border:1px solid #ccc;border-radius:var(--radius);}
-    #subscribe button{padding:10px 20px;border:none;border-radius:var(--radius);background:var(--accent);color:white;font-weight:600;cursor:pointer;}
+    #subscribe button{padding:10px 20px;border:none;border-radius:var(--radius);background:var(--orange);color:var(--accent);font-weight:700;cursor:pointer;}
     .external-link-box{
       margin-top:100px;
       padding:15px 20px;
@@ -172,7 +175,11 @@
     }
 
     footer{
-      padding:20px;text-align:center;font-size:13px;color:var(--muted);
+      padding:20px;
+      text-align:center;
+      font-size:13px;
+      background:var(--orange);
+      color:var(--accent);
     }
   </style>
 </head>
@@ -180,6 +187,7 @@
 
   <!-- Nav -->
   <nav>
+    <a href="#top">Home</a>
     <a href="#science">Science</a>
     <a href="#technology">Technology</a>
     <a href="#history">History</a>
@@ -190,7 +198,7 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="top">
     <h1>On the Edges of Levant</h1>
     <p>Personal reflections on science, technology, history, culture and society. Views are my own and independent from my professional work.</p>
   </section>
