@@ -11,13 +11,12 @@
 
   <style>
     :root{
-      --bg:#fbfaf8;
       --accent:#2b2b6a; /* deep indigo */
-      --muted:#6b7280;
-      --orange:#FFA500; /* sunrise orange */
+      --muted:#f4f4f4;
       --radius:14px;
-      --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      --serif: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+      --mono: 'Inter', system-ui, sans-serif;
+      --serif: 'Merriweather', serif;
+      --orange:#FFA500; /* sunrise orange */
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
@@ -25,7 +24,6 @@
     body{
       margin:0;
       font-family:var(--mono);
-      background:var(--bg);
       color:#111827;
       line-height:1.6;
     }
@@ -36,12 +34,18 @@
       top:0;left:0;right:0;
       background:var(--accent);
       display:flex;
-      justify-content:center;
       align-items:center;
+      justify-content:center;
       gap:30px;
-      padding:15px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.05);
+      padding:15px 30px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
       z-index:1000;
+    }
+    nav .home-icon {
+      margin-right:auto; /* push other links to center/right */
+      font-size:22px;
+      text-decoration:none;
+      color:white;
     }
     nav a{
       text-decoration:none;
@@ -51,12 +55,12 @@
     nav a:hover{opacity:0.7;}
     .button-link{
       padding:6px 12px;
-      background:#e6e9f5;
-      border-radius:var(--radius);
+      background:#fff;
       color:var(--accent)!important;
+      border-radius:var(--radius);
     }
 
-    /* Fullscreen hero */
+    /* Hero */
     .hero{
       display:flex;
       flex-direction:column;
@@ -65,48 +69,58 @@
       height:100vh;
       text-align:center;
       padding:20px;
-      background:url('hero.jpg') center/cover no-repeat;
-      color:white;
+      background:#fff;
     }
     .hero h1{
       font-family:var(--serif);
       font-size:clamp(42px,7vw,80px);
+      color:var(--accent);
       margin-bottom:12px;
     }
     .hero p{
       font-size:18px;
+      color:#444;
       max-width:600px;
     }
 
-    /* Section styling */
+    /* Sections */
     section{
       height:100vh;
-      padding:100px 20px 60px;
+      padding:120px 20px 60px; /* extra top padding for nav */
       text-align:center;
       display:flex;
       flex-direction:column;
       justify-content:center;
       background-size:cover;
       background-position:center;
-      background-repeat:no-repeat;
+      background-attachment:fixed;
       color:white;
+      position:relative;
+    }
+    section::before{
+      content:"";
+      position:absolute;
+      top:0;left:0;right:0;bottom:0;
+      background:rgba(0,0,0,0.45); /* overlay for readability */
+    }
+    section > *{
+      position:relative;
+      z-index:2;
     }
     section h2{
       font-family:var(--serif);
       font-size:42px;
       margin-bottom:30px;
-      color:white;
-      text-shadow:0 2px 6px rgba(0,0,0,0.6);
+      color:#fff;
     }
     .post-preview{
-      width:600px;
+      max-width:700px;
       margin:0 auto 20px;
       text-align:left;
-      background:rgba(255,255,255,0.85);
+      background:rgba(255,255,255,0.9);
       padding:20px;
       border-radius:var(--radius);
       box-shadow:0 4px 12px rgba(0,0,0,0.2);
-      color:#111827;
     }
     .post-preview h3{
       margin:0 0 6px;
@@ -132,21 +146,13 @@
       text-align:center;
       font-weight:700;
       font-size:20px;
-      color:white;
+      color:#fff;
       text-decoration:none;
-      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
 
-    /* Background images for each section */
-    #science{background-image:url('science.jpg');}
-    #technology{background-image:url('technology.jpg');}
-    #history{background-image:url('history.JPG');}
-    #geopolitics{background-image:url('geopolitical.JPG');}
-    #culture{background-image:url('culture.jpg');}
-
-    /* Subscribe section */
+    /* Subscribe */
     #subscribe{
-      background:url('subscribe.jpg') center/cover no-repeat;
+      background:var(--muted) url('subscribe.jpg') center/cover fixed;
       height:100vh;
       display:flex;
       flex-direction:column;
@@ -154,17 +160,16 @@
       align-items:center;
       text-align:center;
       padding:20px;
-      color:white;
-      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
-    #subscribe h2{font-family:var(--serif);margin-bottom:12px;}
+    #subscribe h2{font-family:var(--serif);color:#fff;margin-bottom:12px;font-size:42px;}
+    #subscribe p{color:#fff;}
     #subscribe form{display:flex;gap:10px;margin-top:20px;}
     #subscribe input{padding:10px;border:1px solid #ccc;border-radius:var(--radius);}
     #subscribe button{padding:10px 20px;border:none;border-radius:var(--radius);background:var(--orange);color:var(--accent);font-weight:700;cursor:pointer;}
     .external-link-box{
       margin-top:100px;
       padding:15px 20px;
-      background:#e6e9f5;
+      background:#fff;
       border-radius:var(--radius);
       display:inline-block;
     }
@@ -174,6 +179,7 @@
       font-weight:600;
     }
 
+    /* Footer */
     footer{
       padding:20px;
       text-align:center;
@@ -181,13 +187,20 @@
       background:var(--orange);
       color:var(--accent);
     }
+
+    /* Section backgrounds */
+    #science{background-image:url('science.jpg');}
+    #technology{background-image:url('technology.jpg');}
+    #history{background-image:url('history.JPG');}
+    #geopolitics{background-image:url('geopolitical.JPG');}
+    #culture{background-image:url('culture.jpg');}
   </style>
 </head>
 <body>
 
   <!-- Nav -->
   <nav>
-    <a href="#top">Home</a>
+    <a href="#hero" class="home-icon">🏠</a>
     <a href="#science">Science</a>
     <a href="#technology">Technology</a>
     <a href="#history">History</a>
@@ -198,12 +211,12 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero" id="top">
+  <section class="hero" id="hero">
     <h1>On the Edges of Levant</h1>
     <p>Personal reflections on science, technology, history, culture and society. Views are my own and independent from my professional work.</p>
   </section>
 
-  <!-- Sections -->
+  <!-- Science -->
   <section id="science">
     <h2>Science</h2>
     <div class="post-preview">
@@ -219,6 +232,7 @@
     <a class="more-link" href="#">More posts in Science →</a>
   </section>
 
+  <!-- Technology -->
   <section id="technology">
     <h2>Technology</h2>
     <div class="post-preview">
@@ -234,6 +248,7 @@
     <a class="more-link" href="#">More posts in Technology →</a>
   </section>
 
+  <!-- History -->
   <section id="history">
     <h2>History</h2>
     <div class="post-preview">
@@ -249,6 +264,7 @@
     <a class="more-link" href="#">More posts in History →</a>
   </section>
 
+  <!-- Geopolitics -->
   <section id="geopolitics">
     <h2>Geopolitics</h2>
     <div class="post-preview">
@@ -264,6 +280,7 @@
     <a class="more-link" href="#">More posts in Geopolitics →</a>
   </section>
 
+  <!-- Culture -->
   <section id="culture">
     <h2>Culture & Society</h2>
     <div class="post-preview">
