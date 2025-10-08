@@ -14,11 +14,6 @@
       --bg:#fbfaf8;
       --accent:#2b2b6a; /* deep indigo */
       --muted:#6b7280;
-      --section1:#ffffff;
-      --section2:#f7f2ef;
-      --section3:#f0f4f8;
-      --section4:#fdf4f4;
-      --section5:#f9f9ec;
       --radius:14px;
       --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
       --serif: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
@@ -68,42 +63,48 @@
       height:100vh;
       text-align:center;
       padding:20px;
+      background:url('hero.jpg') center/cover no-repeat;
+      color:white;
     }
     .hero h1{
       font-family:var(--serif);
       font-size:clamp(42px,7vw,80px);
-      color:var(--accent);
       margin-bottom:12px;
     }
     .hero p{
       font-size:18px;
-      color:var(--muted);
       max-width:600px;
     }
 
     /* Section styling */
     section{
       height:100vh;
-      padding:100px 20px 60px; /* extra top padding to account for nav */
+      padding:100px 20px 60px;
       text-align:center;
       display:flex;
       flex-direction:column;
       justify-content:center;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      color:white;
     }
     section h2{
       font-family:var(--serif);
       font-size:32px;
       margin-bottom:20px;
-      color:var(--accent);
+      color:white;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
     .post-preview{
       max-width:600px;
       margin:0 auto 20px;
       text-align:left;
-      background:white;
+      background:rgba(255,255,255,0.85);
       padding:20px;
       border-radius:var(--radius);
-      box-shadow:0 4px 12px rgba(0,0,0,0.05);
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      color:#111827;
     }
     .post-preview h3{
       margin:0 0 6px;
@@ -128,29 +129,32 @@
       display:block;
       text-align:center;
       font-weight:600;
-      color:var(--accent);
+      color:white;
       text-decoration:none;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
 
-    /* Different background colors */
-    #science{background:var(--section1)}
-    #technology{background:var(--section2)}
-    #history{background:var(--section3)}
-    #geopolitics{background:var(--section4)}
-    #culture{background:var(--section5)}
+    /* Background images for each section */
+    #science{background-image:url('science.jpg');}
+    #technology{background-image:url('technology.jpg');}
+    #history{background-image:url('history.JPG');}
+    #geopolitics{background-image:url('geopolitical.JPG');}
+    #culture{background-image:url('culture.jpg');}
 
     /* Subscribe section */
     #subscribe{
-      background:var(--section2);
-      height:80vh; /* make subscribe full screen */
+      background:url('subscribe.jpg') center/cover no-repeat;
+      height:80vh;
       display:flex;
       flex-direction:column;
       justify-content:center;
       align-items:center;
       text-align:center;
       padding:20px;
+      color:white;
+      text-shadow:0 2px 6px rgba(0,0,0,0.6);
     }
-    #subscribe h2{font-family:var(--serif);color:var(--accent);margin-bottom:12px;}
+    #subscribe h2{font-family:var(--serif);margin-bottom:12px;}
     #subscribe form{display:flex;gap:10px;margin-top:10px;}
     #subscribe input{padding:10px;border:1px solid #ccc;border-radius:var(--radius);}
     #subscribe button{padding:10px 20px;border:none;border-radius:var(--radius);background:var(--accent);color:white;font-weight:600;cursor:pointer;}
