@@ -148,6 +148,12 @@
       font-weight:600;
       text-decoration:none;
     }
+    @media (max-width: 700px) {
+      .post-preview {
+        width: 90%;
+        padding: 15px;
+      }
+    }
 
     .more-link{
       margin-top:15px;
@@ -207,9 +213,27 @@
     }
 
     /* ---------- Responsive Navbar ---------- */
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
     @media (max-width: 900px) {
       nav {
-        flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px 20px;
       }
@@ -224,6 +248,7 @@
         right: 0;
         text-align: center;
         padding: 20px 0;
+        gap: 20px;
       }
 
       .nav-links.active {
@@ -231,28 +256,16 @@
       }
 
       .burger {
-        display: block;
-        cursor: pointer;
-      }
-
-      .burger div {
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        margin: 5px;
-        transition: all 0.3s ease;
+        display: flex;
       }
     }
 
-    /* Hide burger and show normal nav on large screens */
-    .burger { display: none; }
-
-    /* Fix image scaling and parallax on mobile */
+    /* Fix parallax and image scaling on tablets/phones */
     @media (max-width: 1024px) {
       section {
-        background-attachment: scroll; /* disables parallax for mobile */
-        background-size: contain; /* prevents zooming */
-        background-position: center top;
+        background-attachment: scroll;
+        background-size: cover; /* maintains full coverage without zooming out */
+        background-position: center;
       }
     }
 
