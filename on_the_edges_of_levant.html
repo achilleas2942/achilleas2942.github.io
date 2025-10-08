@@ -205,6 +205,57 @@
       background:var(--orange);
       color:var(--accent);
     }
+
+    /* ---------- Responsive Navbar ---------- */
+    @media (max-width: 900px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(43,43,106,0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .burger {
+        display: block;
+        cursor: pointer;
+      }
+
+      .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+    }
+
+    /* Hide burger and show normal nav on large screens */
+    .burger { display: none; }
+
+    /* Fix image scaling and parallax on mobile */
+    @media (max-width: 1024px) {
+      section {
+        background-attachment: scroll; /* disables parallax for mobile */
+        background-size: contain; /* prevents zooming */
+        background-position: center top;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -216,13 +267,20 @@
         <path d="M12 3l10 9h-3v9h-6v-6H11v6H5v-9H2z"/>
       </svg>
     </a>
-    <a href="#science">Science</a>
-    <a href="#technology">Technology</a>
-    <a href="#history">History</a>
-    <a href="#geopolitics">Geopolitics</a>
-    <a href="#culture">Culture</a>
-    <a href="#subscribe">Subscribe</a>
-    <a class="button-link" href="index.html" target="_blank">Professional Webpage</a>
+
+    <div class="burger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      <div></div><div></div><div></div>
+    </div>
+
+    <div class="nav-links">
+      <a href="#science">Science</a>
+      <a href="#technology">Technology</a>
+      <a href="#history">History</a>
+      <a href="#geopolitics">Geopolitics</a>
+      <a href="#culture">Culture</a>
+      <a href="#subscribe">Subscribe</a>
+      <a class="button-link" href="index.html" target="_blank">Professional Webpage</a>
+    </div>
   </nav>
 
   <!-- Hero -->
