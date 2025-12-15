@@ -1,8 +1,8 @@
 ## Hi there 👋
 
-👨‍🎓 My name is Achilleas. I am **Ph.D. student** at Luleå University of Technology. I am interested in robotics, control systems, industrial automation and edge computing. 👨‍🔧
+👨‍🎓 My name is Achilleas, and I am **Researcher** at Ericsson, Sweden. I am interested in robotics, networked control systems and edge computing. 👨‍🔧
 
-- 🦾 I’m currently working on **Edge Robotics** with the [Robotics and AI Group](https://github.com/LTU-RAI) at Luleå University of Technology.
+- 🦾 I’m currently working on **Networked Controlled Autonomous Mobile Robots** at Ericsson Research.
 - 🖥️ I’m mainly working with **ROS 1 / ROS 2** | **Python** | **C++** | **Docker** | **Kubernetes**.
 - 💬 Feel free to ask me anything about robotics, edge computing, or autonomy on my [discussions](https://github.com/achilleas2942/achilleas2942/discussions).
 - 💼 You can also reach out to me on [Linkedin](https://www.linkedin.com/in/seisa/).
