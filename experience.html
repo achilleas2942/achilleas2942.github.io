@@ -73,7 +73,7 @@
       .spy-nav { display: block; }
       body { padding-left: 170px; }
     }
-    section[id] { scroll-margin-top: 5.5rem; }
+    section[id] { scroll-margin-top: 5.2rem; }
     .spy-nav ul {
       list-style: none;
       margin: 0;
@@ -99,10 +99,10 @@
 <body>
   <nav class="spy-nav" aria-label="Page sections">
     <ul>
-      <li><a href="#ericsson2">Ericsson (Researcher)</a></li>
-      <li><a href="#8d">Eighth Dimension</a></li>
+      <li><a href="#ericsson2">Ericsson</a></li>
+      <li><a href="#d">Eighth Dimension</a></li>
       <li><a href="#phd">Ph.D. / LTU</a></li>
-      <li><a href="#epiroc">Epiroc</a></li>
+      <li><a href="#epiroc">Epiroc (Visit)</a></li>
       <li><a href="#ericsson">Ericsson (Visit)</a></li>
       <li><a href="#rockwell">Rockwell</a></li>
       <li><a href="#skills">Skill Set</a></li>
@@ -183,7 +183,7 @@
   </section>
 
   <!-- 8D -->  
-  <section id="8d" class="section" style="color:white;" data-aos="fade-up">
+  <section id="d" class="section" style="color:white;" data-aos="fade-up">
     <div class="container">
       <div class="p-3 rounded shadow" style="border: 2px solid #555; background-color: transparent;">
         <h2>CTO & Co-Founder at <a href="https://8-d.ai/" target="_blank" class="text-warning">Eighth Dimension GmbH</a></h2>
@@ -672,7 +672,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     (function () {
-      var sections = ['ericsson2', '8d', 'phd', 'epiroc', 'ericsson', 'rockwell', 'skills'];
+      var sections = ['ericsson2', 'd', 'phd', 'epiroc', 'ericsson', 'rockwell', 'skills'];
       var links = {};
       sections.forEach(function (id) {
         var el = document.querySelector('.spy-nav a[href="#' + id + '"]');
