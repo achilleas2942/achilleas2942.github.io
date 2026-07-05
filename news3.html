@@ -25,10 +25,26 @@
     .pagination-nav a { color: #ffc107; text-decoration: none; padding: 0.4rem 0.8rem; border: 1px solid #ffc107; border-radius: 4px; margin: 0 2px; transition: background 0.2s; }
     .pagination-nav a:hover { background: #ffc107; color: #000; }
     .pagination-nav a.active { background: #ffc107; color: #000; font-weight: bold; }
+
+    /* Scroll-spy sidebar */
+    .spy-nav { display: none; position: fixed; top: 5rem; left: 0; width: 160px; z-index: 900; padding: 0.5rem 0.75rem; }
+    @media (min-width: 1200px) { .spy-nav { display: block; } }
+    .spy-nav a { display: block; font-size: 0.78rem; color: #aaa; text-decoration: none; padding: 0.25rem 0; transition: color 0.2s; }
+    .spy-nav a:hover { color: #fff; }
+    .spy-nav a.active { color: #ffc107; font-weight: bold; }
   </style>
 </head>
 
 <body>
+  <!-- Scroll-spy sidebar -->
+  <nav class="spy-nav" aria-label="Year navigation">
+    <a href="news.html">2025</a>
+    <a href="news2.html#year-2024">2024</a>
+    <a href="#year-2023" data-spy="year-2023">2023</a>
+    <a href="news4.html#year-2022">2022</a>
+    <a href="news5.html#year-2021">2021</a>
+  </nav>
+
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html">Achilleas Santi Seisa</a>
@@ -118,7 +134,7 @@
     </div>
   </section>
 
-  <div class="d-flex align-items-center my-4 px-3">
+  <div id="year-2023" class="d-flex align-items-center my-4 px-3">
     <hr class="flex-grow-1 border-secondary">
     <span class="px-3 text-warning fw-bold">2023</span>
     <hr class="flex-grow-1 border-secondary">
@@ -356,5 +372,36 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init({ duration: 800, offset: 100, once: false, mirror: true });</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll-spy for year sidebar
+    (function() {
+      var sections = ['year-2023'];
+      var links = {};
+      sections.forEach(function(id) {
+        var el = document.getElementById(id);
+        var a = document.querySelector('.spy-nav a[data-spy="' + id + '"]');
+        if (el && a) links[id] = { el: el, a: a };
+      });
+      if (Object.keys(links).length === 0) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          var id = entry.target.id;
+          if (links[id]) {
+            if (entry.isIntersecting) links[id].a.classList.add('active');
+            else links[id].a.classList.remove('active');
+          }
+        });
+      }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
+      Object.keys(links).forEach(function(id) { observer.observe(links[id].el); });
+      // Smooth scroll for on-page anchors
+      document.querySelectorAll('.spy-nav a[data-spy]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          var id = this.getAttribute('data-spy');
+          var el = document.getElementById(id);
+          if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

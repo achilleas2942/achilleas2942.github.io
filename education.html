@@ -58,10 +58,72 @@
       box-shadow: none;
       text-decoration: none;
     }
+
+    /* scroll-spy sidebar */
+    .spy-nav {
+      display: none;
+      position: fixed;
+      top: 5rem;
+      left: 0;
+      width: 160px;
+      z-index: 900;
+      padding: 0.5rem 0 0.5rem 1rem;
+    }
+    @media (min-width: 1200px) {
+      .spy-nav { display: block; }
+    }
+    .spy-nav a {
+      display: block;
+      font-size: 0.78rem;
+      color: #aaa;
+      text-decoration: none;
+      padding: 0.25rem 0;
+      transition: color 0.2s;
+      list-style: none;
+    }
+    .spy-nav a.scroll-spy-active {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    /* === Scroll-spy sidebar === */
+    .spy-nav {
+      display: none;
+      position: fixed;
+      top: 5rem;
+      left: 0;
+      width: 160px;
+      z-index: 900;
+      padding: 0.5rem 0.75rem;
+    }
+    @media (min-width: 1200px) {
+      .spy-nav { display: block; }
+    }
+    .spy-nav a {
+      display: block;
+      font-size: 0.78rem;
+      color: #aaa;
+      text-decoration: none;
+      padding: 0.3rem 0;
+      transition: color 0.2s, font-weight 0.2s;
+      line-height: 1.3;
+    }
+    .spy-nav a:hover { color: #ffc107; }
+    .spy-nav a.spy-active { color: #ffc107; font-weight: bold; }
   </style>
 </head>
 
 <body>
+  <nav class="spy-nav" aria-label="Page sections">
+    <a href="#phd" class="spy-link">Ph.D.</a>
+    <a href="#licentiate" class="spy-link">Licentiate</a>
+    <a href="#masters" class="spy-link">Master's</a>
+  </nav>
+<nav class="spy-nav" aria-label="Page sections">
+  <a href="#phd">Ph.D.</a>
+  <a href="#licentiate">Licentiate</a>
+  <a href="#masters">Master's</a>
+</nav>
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html">Achilleas Santi Seisa</a>
@@ -474,6 +536,63 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function () {
+    var links = document.querySelectorAll('.spy-nav a');
+    var sections = Array.from(links).map(function (a) {
+      return document.querySelector(a.getAttribute('href'));
+    });
+    function activate(id) {
+      links.forEach(function (a) {
+        a.classList.toggle('scroll-spy-active', a.getAttribute('href') === '#' + id);
+      });
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) activate(entry.target.id);
+      });
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+    sections.forEach(function (s) { if (s) observer.observe(s); });
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  })();
+</script>
+  <script>
+    (function () {
+      var ids = ['phd', 'licentiate', 'masters'];
+      var links = {};
+      ids.forEach(function (id) {
+        var el = document.querySelector('.spy-nav a[href="#' + id + '"]');
+        if (el) links[id] = el;
+      });
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (links[entry.target.id]) {
+            if (entry.isIntersecting) {
+              Object.values(links).forEach(function (l) { l.classList.remove('spy-active'); });
+              links[entry.target.id].classList.add('spy-active');
+            }
+          }
+        });
+      }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
+      ids.forEach(function (id) {
+        var sec = document.getElementById(id);
+        if (sec) observer.observe(sec);
+      });
+      document.querySelectorAll('.spy-nav a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
 </body>
 
 </html>
