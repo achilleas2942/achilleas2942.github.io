@@ -322,9 +322,9 @@
       </svg>
     </a>
 
-    <div class="burger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    <button class="burger" id="burgerBtn" aria-label="Toggle navigation" aria-expanded="false" style="background:none;border:none;cursor:pointer;padding:0;">
       <div></div><div></div><div></div>
-    </div>
+    </button>
 
     <div class="nav-links">
       <a href="#science">Science</a>
@@ -440,5 +440,13 @@
   <footer>
     © Achilleas Santi Seisa — On the Edges of Levant · This blog reflects my personal views
   </footer>
+  <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const navLinks = document.querySelector('.nav-links');
+    burgerBtn.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('active');
+      burgerBtn.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
 </body>
 </html>
