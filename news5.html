@@ -28,7 +28,8 @@
 
     /* Scroll-spy sidebar */
     .spy-nav { display: none; position: fixed; top: 5rem; left: 0; width: 160px; z-index: 900; padding: 0.5rem 0.75rem; }
-    @media (min-width: 1200px) { .spy-nav { display: block; } }
+    @media (min-width: 1200px) { .spy-nav { display: block; } body { padding-left: 170px; } }
+    section[id] { scroll-margin-top: 5.5rem; }
     .spy-nav a { display: block; font-size: 0.78rem; color: #aaa; text-decoration: none; padding: 0.25rem 0; transition: color 0.2s; }
     .spy-nav a:hover { color: #fff; }
     .spy-nav a.active { color: #ffc107; font-weight: bold; }
