@@ -467,7 +467,7 @@
             else links[id].a.classList.remove('active');
           }
         });
-      }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
+      }, { rootMargin: '-84px 0px -60% 0px', threshold: 0 });
       Object.keys(links).forEach(function(id) { observer.observe(links[id].el); });
       // Smooth scroll for on-page anchors
       document.querySelectorAll('.spy-nav a[data-spy]').forEach(function(a) {
